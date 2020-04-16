@@ -1,8 +1,11 @@
-# Gatsby-theme-github-stats
+# gatsby-covidib
 
-A Gatsby Theme to display statistics for GitHub repos.
+A Gatsby project to display statistics COVID-19 at Balearic Islands.
 
-![Example site for theme using gatsby as data](./theme-example.png)
+![Example site for theme using gatsby as data](./captura.png)
+
+
+Rewrite...
 
 ## Example Site
 
