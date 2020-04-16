@@ -39,7 +39,7 @@ const Overview = ({ currentNode, prevDayNode }) => (
         862
         <p>Curats</p>
         {/* {prevDayNode &&
-          dayDiff(currentNode.closedIssues, prevDayNode.closedIssues, "up")} */}
+          dayDiff(currentNode.Actius, prevDayNode.Actius, "up")} */}
       </li>
       <li>
         117

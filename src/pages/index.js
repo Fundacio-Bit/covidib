@@ -4,6 +4,7 @@ import { Styled } from "theme-ui"
 // import moment from "moment"
 
 import StatChart from "../components/StatChart"
+import StatChartComparison from "../components/StatChartComparison"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Overview from "../components/Overview"
@@ -14,16 +15,17 @@ const RED = "rgb(203, 36, 49)"
 const GREEN = "rgb(40, 167, 69)"
 const PURPLE = "rgb(102, 51, 153)"
 const GOLD = "rgb(255, 182, 30)"
+const BLUE = "rgb(136, 132, 216)"
 
 export default () => {
   const data = useStaticQuery(graphql`
     {
       allDataJson {
         nodes {
-          closedIssues
+          Actius
           closedPRs
           mergedPRs
-          openIssues
+          Recuperacions
           openPRs
           stars
           timestamp
@@ -48,14 +50,16 @@ export default () => {
           <StatChart
             title="RECUPERACIONS DEFINITIVES"
             data={nodes}
-            yKey="openIssues"
+            yKey="Recuperacions"
             color={GREEN}
           />
-          <StatChart
-            title="CASOS NOUS"
+          <StatChartComparison
+            title="COMPARACIÓ CASOS ACTIUS i RECUPERACIONS"
             data={nodes}
-            yKey="closedIssues"
+            yKey="Actius"
+            y2Key="Recuperacions"
             color={RED}
+            color2={BLUE}
           />
           <StatChart
             title="Open PRs"
