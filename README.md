@@ -1,4 +1,4 @@
-# gatsby-covidib
+# Covid IB
 
 A Gatsby project to display statistics COVID-19 at Balearic Islands.
 
