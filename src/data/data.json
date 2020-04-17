@@ -3,7 +3,7 @@
    "fecha": "27-mar",
    "PositivosAcumulados": 755,
    "CasosNous": 95,
-   "Increment": "14.4%",
+   "Increment": 14.4,
    "Actius": 651,
    "Recuperacions": 77
  },
@@ -11,7 +11,7 @@
    "fecha": "28-mar",
    "PositivosAcumulados": 862,
    "CasosNous": 107,
-   "Increment": "14.2%",
+   "Increment": 14.2,
    "Actius": 738,
    "Recuperacions": 96
  },
@@ -19,7 +19,7 @@
    "fecha": "29-mar",
    "PositivosAcumulados": 958,
    "CasosNous": 96,
-   "Increment": "11.1%",
+   "Increment": 11.1,
    "Actius": 826,
    "Recuperacions": 99
  },
@@ -27,7 +27,7 @@
    "fecha": "30-mar",
    "PositivosAcumulados": 1000,
    "CasosNous": 42,
-   "Increment": "4.4%",
+   "Increment": 4.4,
    "Actius": 856,
    "Recuperacions": 107
  },
@@ -35,7 +35,7 @@
    "fecha": "31-mar",
    "PositivosAcumulados": 1069,
    "CasosNous": 69,
-   "Increment": "6.9%",
+   "Increment": 6.9,
    "Actius": 909,
    "Recuperacions": 111
  },
@@ -43,7 +43,7 @@
    "fecha": "01-abr",
    "PositivosAcumulados": 1131,
    "CasosNous": 62,
-   "Increment": "5.8%",
+   "Increment": 5.8,
    "Actius": 904,
    "Recuperacions": 170
  },
@@ -51,7 +51,7 @@
    "fecha": "02-abr",
    "PositivosAcumulados": 1204,
    "CasosNous": 73,
-   "Increment": "6.5%",
+   "Increment": 6.5,
    "Actius": 907,
    "Recuperacions": 239
  },
@@ -59,7 +59,7 @@
    "fecha": "03-abr",
    "PositivosAcumulados": 1257,
    "CasosNous": 53,
-   "Increment": "4.4%",
+   "Increment": 4.4,
    "Actius": 813,
    "Recuperacions": 375
  },
@@ -67,7 +67,7 @@
    "fecha": "04-abr",
    "PositivosAcumulados": 1271,
    "CasosNous": 14,
-   "Increment": "1.1%",
+   "Increment": 1.1,
    "Actius": 778,
    "Recuperacions": 422
  },
@@ -75,7 +75,7 @@
    "fecha": "05-abr",
    "PositivosAcumulados": 1293,
    "CasosNous": 22,
-   "Increment": "1.7%",
+   "Increment": 1.7,
    "Actius": 757,
    "Recuperacions": 461
  },
@@ -83,7 +83,7 @@
    "fecha": "06-abr",
    "PositivosAcumulados": 1320,
    "CasosNous": 27,
-   "Increment": "2.1%",
+   "Increment": 2.1,
    "Actius": 708,
    "Recuperacions": 531
  },
@@ -91,7 +91,7 @@
    "fecha": "07-abr",
    "PositivosAcumulados": 1369,
    "CasosNous": 49,
-   "Increment": "3.7%",
+   "Increment": 3.7,
    "Actius": 748,
    "Recuperacions": 537
  },
@@ -99,7 +99,7 @@
    "fecha": "08-abr",
    "PositivosAcumulados": 1412,
    "CasosNous": 43,
-   "Increment": "3.1%",
+   "Increment": 3.1,
    "Actius": 707,
    "Recuperacions": 616
  },
@@ -107,7 +107,7 @@
    "fecha": "09-abr",
    "PositivosAcumulados": 1448,
    "CasosNous": 36,
-   "Increment": "2.5%",
+   "Increment": 2.5,
    "Actius": 663,
    "Recuperacions": 696
  },
@@ -115,7 +115,7 @@
    "fecha": "10-abr",
    "PositivosAcumulados": 1488,
    "CasosNous": 40,
-   "Increment": "2.8%",
+   "Increment": 2.8,
    "Actius": 654,
    "Recuperacions": 737
  },
@@ -123,7 +123,7 @@
    "fecha": "11-abr",
    "PositivosAcumulados": 1507,
    "CasosNous": 19,
-   "Increment": "1.3%",
+   "Increment": 1.3,
    "Actius": 648,
    "Recuperacions": 757
  },
@@ -131,7 +131,7 @@
    "fecha": "12-abr",
    "PositivosAcumulados": 1534,
    "CasosNous": 27,
-   "Increment": "1.8%",
+   "Increment": 1.8,
    "Actius": 574,
    "Recuperacions": 848
  },
@@ -139,7 +139,7 @@
    "fecha": "13-abr",
    "PositivosAcumulados": 1550,
    "CasosNous": 16,
-   "Increment": "1.0%",
+   "Increment": 1.0,
    "Actius": 571,
    "Recuperacions": 862
  },
@@ -147,7 +147,7 @@
    "fecha": "14-abr",
    "PositivosAcumulados": 1571,
    "CasosNous": 21,
-   "Increment": "1.4%",
+   "Increment": 1.4,
    "Actius": 582,
    "Recuperacions": 871
  }
