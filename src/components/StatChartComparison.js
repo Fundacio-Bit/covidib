@@ -10,12 +10,12 @@ import {
   ResponsiveContainer,
 } from "recharts"
 import moment from "moment"
-import { css } from "theme-ui"
+// import { css } from "theme-ui"
 
 const interval = 50
 
-const StatChart = ({ title, data, yKey, color }) => {
-  let datapoints = data.map(dataEntry => dataEntry[yKey])
+const StatChartComparison = ({ title, data, yKey, color, y2Key, color2 }) => {
+  // let datapoints = data.map(dataEntry => dataEntry[yKey])
 
   // let max = Math.max(...datapoints)
   // let min = Math.min(...datapoints)
@@ -31,7 +31,8 @@ const StatChart = ({ title, data, yKey, color }) => {
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={data} margin={{ top: 15 }}>
-          {/* <Tooltip labelFormatter={time => moment.unix(time).format("llll")} /> */}
+          <CartesianGrid strokeDasharray="3 3" />
+          {/* <CartesianGrid stroke="#ccc" strokeDasharray="5 5" /> */}
           <Tooltip />
           <Legend />
           <Line
@@ -42,10 +43,18 @@ const StatChart = ({ title, data, yKey, color }) => {
             dot={false}
             isAnimationActive={false}
           />
+          <Line
+            type="monotone"
+            dataKey={y2Key}
+            stroke={color2}
+            strokeWidth={3}
+            dot={false}
+            isAnimationActive={false}
+          />
           <XAxis
             dataKey="fecha"
             // tickFormatter={time => moment.unix(time).format("YYYY-MM-DD")}
-            // minTickGap={20}
+            // minTickGap={5}
             // padding={{ left: 10, right: 10 }}
           />
           <YAxis
@@ -55,7 +64,6 @@ const StatChart = ({ title, data, yKey, color }) => {
               dataMax => Math.ceil(dataMax / interval) * interval,
             ]}
           />
-          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
         </LineChart>
       </ResponsiveContainer>
       {/* <div
@@ -88,4 +96,4 @@ const StatChart = ({ title, data, yKey, color }) => {
   )
 }
 
-export default StatChart
+export default StatChartComparison

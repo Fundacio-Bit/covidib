@@ -51,11 +51,11 @@ Next, create a file at `src/data/data.json` in your gatsby site and have it as t
 ```json
 [
   {
-    "stars": 35670,
-    "openPRs": 84,
-    "timestamp": 1560977138,
+    "PositivosAcumulados": 35670,
+    "Increment": 84,
+    "fecha": 1560977138,
     "closedIssues": 6355,
-    "closedPRs": 1094,
+    "CasosNous": 1094,
     "openIssues": 442,
     "mergedPRs": 6947
   }

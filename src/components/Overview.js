@@ -39,13 +39,13 @@ const Overview = ({ currentNode, prevDayNode }) => (
         862
         <p>Curats</p>
         {/* {prevDayNode &&
-          dayDiff(currentNode.closedIssues, prevDayNode.closedIssues, "up")} */}
+          dayDiff(currentNode.Actius, prevDayNode.Actius, "up")} */}
       </li>
       <li>
         117
         <p>Exitus</p>
         {/* {prevDayNode &&
-          dayDiff(currentNode.openPRs, prevDayNode.openPRs, "down")} */}
+          dayDiff(currentNode.Increment, prevDayNode.Increment, "down")} */}
       </li>
       <li>
         571
@@ -57,17 +57,17 @@ const Overview = ({ currentNode, prevDayNode }) => (
         1550
         <p>Positius acumulats</p>
         {/* {prevDayNode &&
-          dayDiff(currentNode.closedPRs, prevDayNode.closedPRs, "up")} */}
+          dayDiff(currentNode.CasosNous, prevDayNode.CasosNous, "up")} */}
       </li>
       <li>
         452
         <p>Hospitalitzats</p>
-        {/* {prevDayNode && dayDiff(currentNode.stars, prevDayNode.stars, "up")} */}
+        {/* {prevDayNode && dayDiff(currentNode.PositivosAcumulados, prevDayNode.PositivosAcumulados, "up")} */}
       </li>
       <li>
         88
         <p>UCI</p>
-        {/* {prevDayNode && dayDiff(currentNode.stars, prevDayNode.stars, "up")} */}
+        {/* {prevDayNode && dayDiff(currentNode.PositivosAcumulados, prevDayNode.PositivosAcumulados, "up")} */}
       </li>
     </ul>
   </section>
