@@ -1,31 +1,6 @@
-import React from "react"
+import React from "react";
 
-/**
- *
- * @param {number} current - Current Value
- * @param {number} prev - previous value
- * @param {string} direction - direction which should be positive ("up" or "down")
- */
-// const dayDiff = (current, prev, direction) => {
-//   let diff = current - prev
-//   if ((direction === "up" && diff > 0) || (direction === "down" && diff < 0)) {
-//     return (
-//       <p style={{ color: "green" }}>
-//         ({diff >= 0 ? "+" : ""}
-//         {diff} %)
-//       </p>
-//     )
-//   } else {
-//     return (
-//       <p style={{ color: "rgb(203, 36, 49)" }}>
-//         ({diff >= 0 ? "+" : ""}
-//         {diff} %)
-//       </p>
-//     )
-//   }
-// }
-
-const Overview = ({ currentNode, prevDayNode }) => (
+const Overview = ({ currentNode }) => (
   <section id="overview">
     <h2>SITUACIÓ ACTUAL A LES ILLES BALEARS</h2>
     <ul>
@@ -64,6 +39,6 @@ const Overview = ({ currentNode, prevDayNode }) => (
       </li>
     </ul>
   </section>
-)
+);
 
-export default Overview
+export default Overview;

@@ -2,9 +2,11 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Styled } from "theme-ui";
 import moment from "moment";
+import last from "lodash/last";
 
 import StatChart from "../components/StatChart";
 import StatChartComparison from "../components/StatChartComparison";
+// import LogChart from "../components/LogChart";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Overview from "../components/Overview";
@@ -58,7 +60,8 @@ export default () => {
 
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
 
-  let currentNode = nodes[nodes.length - 1];
+  // let currentNode = nodes[nodes.length - 1];
+  const currentNode = last(nodes);
   let prevDayNode = nodes[nodes.length - 2];
 
   const formatAndTranslateCurrentDate = (date) => {
@@ -86,7 +89,7 @@ export default () => {
       <main>
         <div className="container">
           <Overview currentNode={currentNode} prevDayNode={prevDayNode} />
-          <LogChart data={nodes} />
+          {/* <LogChart data={nodes} title="Corba de casos" /> */}
           <StatChart
             title="RECUPERACIONS DEFINITIVES"
             data={nodes}
