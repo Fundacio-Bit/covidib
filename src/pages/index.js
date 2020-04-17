@@ -63,24 +63,24 @@ export default () => {
             color2={GREEN}
           />
           <StatChart
-            title="Increment Casos %"
-            data={nodes}
-            yKey="Increment"
-            color={GREEN}
-          />
-          <StatChart
-            title="Positivos Acumulados"
-            data={nodes}
-            yKey="PositivosAcumulados"
-            color={PURPLE}
-          />
-          <StatChart
-            title="Casos Nous"
+            title="CASOS NOUS"
             data={nodes}
             yKey="CasosNous"
             color={BLUE}
           />
-          <StatChart title="Stars" data={nodes} yKey="PositivosAcumulados" color={GOLD} />
+          <StatChart
+            title="INCREMENT CASOS %"
+            data={nodes}
+            yKey="Increment"
+            color={GREEN}
+          />
+          {/* <StatChart
+            title="Evolucio casos notificats COVID-19"
+            data={nodes}
+            yKey="PositivosAcumulados"
+            color={RED}
+          />
+          <StatChart title="PositivosAcumulados" data={nodes} yKey="PositivosAcumulados" color={GOLD} /> */}
           <Footer />
         </div>
       </main>
