@@ -1,5 +1,293 @@
 [
   {
+    "data": "2020-02-20T00:00:00.000Z",
+    "positius_acumulats": 1,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-21T00:00:00.000Z",
+    "positius_acumulats": 1,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-22T00:00:00.000Z",
+    "positius_acumulats": 1,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-23T00:00:00.000Z",
+    "positius_acumulats": 1,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-24T00:00:00.000Z",
+    "positius_acumulats": 1,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-25T00:00:00.000Z",
+    "positius_acumulats": 1,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-26T00:00:00.000Z",
+    "positius_acumulats": 1,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-27T00:00:00.000Z",
+    "positius_acumulats": 1,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-28T00:00:00.000Z",
+    "positius_acumulats": 2,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-02-29T00:00:00.000Z",
+    "positius_acumulats": 2,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-03-01T00:00:00.000Z",
+    "positius_acumulats": 2,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-03-02T00:00:00.000Z",
+    "positius_acumulats": 2,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-03-03T00:00:00.000Z",
+    "positius_acumulats": 5,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-03-04T00:00:00.000Z",
+    "positius_acumulats": 6,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-03-05T00:00:00.000Z",
+    "positius_acumulats": 6,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-03-06T00:00:00.000Z",
+    "positius_acumulats": 6,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-03-07T00:00:00.000Z",
+    "positius_acumulats": 8,
+    "hospitalitzats": 0,
+    "uci": 0,
+    "exitus": 0,
+    "curats": 0
+  },
+  {
+    "data": "2020-03-08T00:00:00.000Z",
+    "positius_acumulats": 11,
+    "hospitalitzats": 0,
+    "uci": 1,
+    "exitus": 0,
+    "curats": 2
+  },
+  {
+    "data": "2020-03-09T00:00:00.000Z",
+    "positius_acumulats": 13,
+    "hospitalitzats": 0,
+    "uci": 1,
+    "exitus": 0,
+    "curats": 3
+  },
+  {
+    "data": "2020-03-10T00:00:00.000Z",
+    "positius_acumulats": 16,
+    "hospitalitzats": 8,
+    "uci": 1,
+    "exitus": 0,
+    "curats": 1
+  },
+  {
+    "data": "2020-03-11T00:00:00.000Z",
+    "positius_acumulats": 22,
+    "hospitalitzats": 8,
+    "uci": 2,
+    "exitus": 1,
+    "curats": 1
+  },
+  {
+    "data": "2020-03-12T00:00:00.000Z",
+    "positius_acumulats": 28,
+    "hospitalitzats": 9,
+    "uci": 2,
+    "exitus": 1,
+    "curats": 1
+  },
+  {
+    "data": "2020-03-13T00:00:00.000Z",
+    "positius_acumulats": 28,
+    "hospitalitzats": 9,
+    "uci": 2,
+    "exitus": 1,
+    "curats": 1
+  },
+  {
+    "data": "2020-03-14T00:00:00.000Z",
+    "positius_acumulats": 42,
+    "hospitalitzats": 9,
+    "uci": 2,
+    "exitus": 1,
+    "curats": 1
+  },
+  {
+    "data": "2020-03-15T00:00:00.000Z",
+    "positius_acumulats": 73,
+    "hospitalitzats": 21,
+    "uci": 4,
+    "exitus": 1,
+    "curats": 1
+  },
+  {
+    "data": "2020-03-16T00:00:00.000Z",
+    "positius_acumulats": 92,
+    "hospitalitzats": 26,
+    "uci": 4,
+    "exitus": 1,
+    "curats": 1
+  },
+  {
+    "data": "2020-03-17T00:00:00.000Z",
+    "positius_acumulats": 112,
+    "hospitalitzats": 29,
+    "uci": 4,
+    "exitus": 1,
+    "curats": 4
+  },
+  {
+    "data": "2020-03-18T00:00:00.000Z",
+    "positius_acumulats": 169,
+    "hospitalitzats": 31,
+    "uci": 7,
+    "exitus": 2,
+    "curats": 6
+  },
+  {
+    "data": "2020-03-19T00:00:00.000Z",
+    "positius_acumulats": 203,
+    "hospitalitzats": 48,
+    "uci": 10,
+    "exitus": 2,
+    "curats": 10
+  },
+  {
+    "data": "2020-03-20T00:00:00.000Z",
+    "positius_acumulats": 246,
+    "hospitalitzats": 60,
+    "uci": 14,
+    "exitus": 4,
+    "curats": 11
+  },
+  {
+    "data": "2020-03-21T00:00:00.000Z",
+    "positius_acumulats": 331,
+    "hospitalitzats": 79,
+    "uci": 14,
+    "exitus": 4,
+    "curats": 17
+  },
+  {
+    "data": "2020-03-22T00:00:00.000Z",
+    "positius_acumulats": 400,
+    "hospitalitzats": 87,
+    "uci": 27,
+    "exitus": 10,
+    "curats": 18
+  },
+  {
+    "data": "2020-03-23T00:00:00.000Z",
+    "positius_acumulats": 478,
+    "hospitalitzats": 127,
+    "uci": 35,
+    "exitus": 10,
+    "curats": 19
+  },
+  {
+    "data": "2020-03-24T00:00:00.000Z",
+    "positius_acumulats": 562,
+    "hospitalitzats": 164,
+    "uci": 40,
+    "exitus": 13,
+    "curats": 28
+  },
+  {
+    "data": "2020-03-25T00:00:00.000Z",
+    "positius_acumulats": 660,
+    "hospitalitzats": 205,
+    "uci": 43,
+    "exitus": 17,
+    "curats": 39
+  },
+  {
+    "data": "2020-03-26T00:00:00.000Z",
+    "positius_acumulats": 755,
+    "hospitalitzats": 237,
+    "uci": 46,
+    "exitus": 22,
+    "curats": 67
+  },
+  {
     "percentatge_increment": 14.4,
     "actius": 651,
     "data": "2020-03-27T00:00:00.000Z",
