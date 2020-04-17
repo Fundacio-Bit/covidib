@@ -54,6 +54,7 @@ const Overview = ({ currentNode, prevDayNode, islands, hospitalized, uci, positi
         {/* {prevDayNode &&
           dayDiff(currentNode.mergedPRs, prevDayNode.mergedPRs, "up")} */}
       </li>
+      <li>{' '}</li>
     </ul>
   </section>
 )
