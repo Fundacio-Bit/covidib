@@ -31,7 +31,8 @@ const StatChart = ({ title, data, yKey, color }) => {
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={data} margin={{ top: 15 }}>
-          <Tooltip labelFormatter={time => moment.unix(time).format("llll")} />
+          {/* <Tooltip labelFormatter={time => moment.unix(time).format("llll")} /> */}
+          <Tooltip />
           <Legend />
           <Line
             type="monotone"

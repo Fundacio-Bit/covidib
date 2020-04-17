@@ -31,7 +31,9 @@ const StatChartComparison = ({ title, data, yKey, color, y2Key, color2 }) => {
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={data} margin={{ top: 15 }}>
-          <Tooltip labelFormatter={time => moment.unix(time).format("llll")} />
+          <CartesianGrid strokeDasharray="3 3" />
+          {/* <CartesianGrid stroke="#ccc" strokeDasharray="5 5" /> */}
+          <Tooltip />
           <Legend />
           <Line
             type="monotone"
@@ -51,7 +53,7 @@ const StatChartComparison = ({ title, data, yKey, color, y2Key, color2 }) => {
           />
           <XAxis
             dataKey="fecha"
-            tickFormatter={time => moment.unix(time).format("YYYY-MM-DD")}
+            // tickFormatter={time => moment.unix(time).format("YYYY-MM-DD")}
             // minTickGap={5}
             // padding={{ left: 10, right: 10 }}
           />
@@ -62,7 +64,6 @@ const StatChartComparison = ({ title, data, yKey, color, y2Key, color2 }) => {
               dataMax => Math.ceil(dataMax / interval) * interval,
             ]}
           />
-          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
         </LineChart>
       </ResponsiveContainer>
       {/* <div
