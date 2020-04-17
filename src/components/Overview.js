@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Overview = ({ currentNode }) => (
   <section id="overview">
@@ -7,7 +7,7 @@ const Overview = ({ currentNode }) => (
       <li>
         {currentNode.nous_positius}
         <p>Nous positius</p>
-        <p>({currentNode.Increment} %)</p>
+        <p>({currentNode.percentatge_increment} %)</p>
       </li>
       <li>
         {currentNode.curats}
@@ -39,6 +39,6 @@ const Overview = ({ currentNode }) => (
       </li>
     </ul>
   </section>
-);
+)
 
-export default Overview;
+export default Overview

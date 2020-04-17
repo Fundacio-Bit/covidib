@@ -1,8 +1,8 @@
 [
   {
     "fecha": "27-mar",
-    "CasosNous": 95,
-    "Increment": 14.4,
+
+    "percentatge_increment": 14.4,
     "Actius": 651,
     "Recuperacions": 77,
     "data": "2020-03-27",
@@ -17,8 +17,8 @@
   },
   {
     "fecha": "28-mar",
-    "CasosNous": 107,
-    "Increment": 14.2,
+
+    "percentatge_increment": 14.2,
     "Actius": 738,
     "Recuperacions": 96,
     "data": "2020-03-28",
@@ -33,8 +33,8 @@
   },
   {
     "fecha": "29-mar",
-    "CasosNous": 96,
-    "Increment": 11.1,
+
+    "percentatge_increment": 11.1,
     "Actius": 826,
     "Recuperacions": 99,
     "data": "2020-03-29",
@@ -49,8 +49,8 @@
   },
   {
     "fecha": "30-mar",
-    "CasosNous": 42,
-    "Increment": 4.4,
+
+    "percentatge_increment": 4.4,
     "Actius": 856,
     "Recuperacions": 107,
     "data": "2020-03-30",
@@ -65,8 +65,8 @@
   },
   {
     "fecha": "31-mar",
-    "CasosNous": 69,
-    "Increment": 6.9,
+
+    "percentatge_increment": 6.9,
     "Actius": 909,
     "Recuperacions": 111,
     "data": "2020-03-31",
@@ -81,8 +81,8 @@
   },
   {
     "fecha": "01-abr",
-    "CasosNous": 62,
-    "Increment": 5.8,
+
+    "percentatge_increment": 5.8,
     "Actius": 904,
     "Recuperacions": 170,
     "data": "2020-04-01",
@@ -97,8 +97,8 @@
   },
   {
     "fecha": "02-abr",
-    "CasosNous": 73,
-    "Increment": 6.5,
+
+    "percentatge_increment": 6.5,
     "Actius": 907,
     "Recuperacions": 239,
     "data": "2020-04-02",
@@ -113,8 +113,8 @@
   },
   {
     "fecha": "03-abr",
-    "CasosNous": 53,
-    "Increment": 4.4,
+
+    "percentatge_increment": 4.4,
     "Actius": 813,
     "Recuperacions": 375,
     "data": "2020-04-03",
@@ -129,8 +129,8 @@
   },
   {
     "fecha": "04-abr",
-    "CasosNous": 14,
-    "Increment": 1.1,
+
+    "percentatge_increment": 1.1,
     "Actius": 778,
     "Recuperacions": 422,
     "data": "2020-04-12",
@@ -145,8 +145,8 @@
   },
   {
     "fecha": "05-abr",
-    "CasosNous": 22,
-    "Increment": 1.7,
+
+    "percentatge_increment": 1.7,
     "Actius": 757,
     "Recuperacions": 461,
     "data": "2020-04-05",
@@ -161,8 +161,8 @@
   },
   {
     "fecha": "06-abr",
-    "CasosNous": 27,
-    "Increment": 2.1,
+
+    "percentatge_increment": 2.1,
     "Actius": 708,
     "Recuperacions": 531,
     "data": "2020-04-06",
@@ -177,8 +177,8 @@
   },
   {
     "fecha": "07-abr",
-    "CasosNous": 49,
-    "Increment": 3.7,
+
+    "percentatge_increment": 3.7,
     "Actius": 748,
     "Recuperacions": 537,
     "data": "2020-04-07",
@@ -193,8 +193,8 @@
   },
   {
     "fecha": "08-abr",
-    "CasosNous": 43,
-    "Increment": 3.1,
+
+    "percentatge_increment": 3.1,
     "Actius": 707,
     "Recuperacions": 616,
     "data": "2020-04-08",
@@ -209,8 +209,8 @@
   },
   {
     "fecha": "09-abr",
-    "CasosNous": 36,
-    "Increment": 2.5,
+
+    "percentatge_increment": 2.5,
     "Actius": 663,
     "Recuperacions": 696,
     "data": "2020-04-09",
@@ -225,8 +225,8 @@
   },
   {
     "fecha": "10-abr",
-    "CasosNous": 40,
-    "Increment": 2.8,
+
+    "percentatge_increment": 2.8,
     "Actius": 654,
     "Recuperacions": 737,
     "data": "2020-04-10",
@@ -241,8 +241,8 @@
   },
   {
     "fecha": "11-abr",
-    "CasosNous": 19,
-    "Increment": 1.3,
+
+    "percentatge_increment": 1.3,
     "Actius": 648,
     "Recuperacions": 757,
     "data": "2020-04-11",
@@ -257,8 +257,8 @@
   },
   {
     "fecha": "12-abr",
-    "CasosNous": 27,
-    "Increment": 1.8,
+
+    "percentatge_increment": 1.8,
     "Actius": 574,
     "Recuperacions": 848,
     "data": "2020-04-12",
@@ -273,8 +273,8 @@
   },
   {
     "fecha": "13-abr",
-    "CasosNous": 16,
-    "Increment": 1.0,
+
+    "percentatge_increment": 1.0,
     "Actius": 571,
     "Recuperacions": 862,
     "data": "2020-04-13",
@@ -289,8 +289,8 @@
   },
   {
     "fecha": "2020/04/14",
-    "CasosNous": 21,
-    "Increment": 1.4,
+
+    "percentatge_increment": 1.4,
     "Actius": 582,
     "Recuperacions": 871,
     "data": "2020-04-14",
@@ -305,8 +305,8 @@
   },
   {
     "fecha": "15-abr",
-    "CasosNous": 35,
-    "Increment": 2.2,
+
+    "percentatge_increment": 2.2,
     "Actius": 582,
     "Recuperacions": 881,
     "data": "2020-04-15",
@@ -321,8 +321,8 @@
   },
   {
     "fecha": "16-abr",
-    "CasosNous": 31,
-    "Increment": 1.9,
+
+    "percentatge_increment": 1.9,
     "Actius": 582,
     "Recuperacions": 918,
     "data": "2020-04-16",
@@ -349,8 +349,8 @@
   },
   {
     "fecha": "17-abr",
-    "CasosNous": 31,
-    "Increment": 1.9,
+
+    "percentatge_increment": 1.9,
     "Actius": 582,
     "Recuperacions": 918,
     "data": "2020-04-17",
