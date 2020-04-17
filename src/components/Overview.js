@@ -6,73 +6,61 @@ import React from "react"
  * @param {number} prev - previous value
  * @param {string} direction - direction which should be positive ("up" or "down")
  */
-const dayDiff = (current, prev, direction) => {
-  let diff = current - prev
-  if ((direction === "up" && diff > 0) || (direction === "down" && diff < 0)) {
-    return (
-      <p style={{ color: "green" }}>
-        ({diff >= 0 ? "+" : ""}
-        {diff} %)
-      </p>
-    )
-  } else {
-    return (
-      <p style={{ color: "rgb(203, 36, 49)" }}>
-        ({diff >= 0 ? "+" : ""}
-        {diff} %)
-      </p>
-    )
-  }
-}
+// const dayDiff = (current, prev, direction) => {
+//   let diff = current - prev
+//   if ((direction === "up" && diff > 0) || (direction === "down" && diff < 0)) {
+//     return (
+//       <p style={{ color: "green" }}>
+//         ({diff >= 0 ? "+" : ""}
+//         {diff} %)
+//       </p>
+//     )
+//   } else {
+//     return (
+//       <p style={{ color: "rgb(203, 36, 49)" }}>
+//         ({diff >= 0 ? "+" : ""}
+//         {diff} %)
+//       </p>
+//     )
+//   }
+// }
 
 const Overview = ({ currentNode, prevDayNode }) => (
   <section id="overview">
     <h2>SITUACIÓ ACTUAL A LES ILLES BALEARS</h2>
     <ul>
       <li>
-        31
+        {currentNode.nous_positius}
         <p>Nous positius</p>
-        {prevDayNode &&
-          dayDiff(2, 1, "up")}
+        <p>({currentNode.Increment} %)</p>
       </li>
       <li>
-        918
+        {currentNode.curats}
         <p>Curats</p>
-        {/* {prevDayNode &&
-          dayDiff(currentNode.Actius, prevDayNode.Actius, "up")} */}
       </li>
       <li>
-        131
+        {currentNode.exitus}
         <p>Exitus</p>
-        {/* {prevDayNode &&
-          dayDiff(currentNode.Increment, prevDayNode.Increment, "down")} */}
       </li>
       <li>
-        588
+        {currentNode.positius_actius}
         <p>Positius actius</p>
-        {/* {prevDayNode &&
-          dayDiff(currentNode.mergedPRs, prevDayNode.mergedPRs, "up")} */}
       </li>
       <li>
-        1637
+        {currentNode.positius_acumulats}
         <p>Positius acumulats</p>
-        {/* {prevDayNode &&
-          dayDiff(currentNode.CasosNous, prevDayNode.CasosNous, "up")} */}
       </li>
       <li>
-        326
+        {currentNode.hospitalitzats}
         <p>Hospitalitzats</p>
-        {/* {prevDayNode && dayDiff(currentNode.PositivosAcumulados, prevDayNode.PositivosAcumulados, "up")} */}
       </li>
       <li>
-        79
+        {currentNode.uci}
         <p>UCI</p>
-        {/* {prevDayNode && dayDiff(currentNode.PositivosAcumulados, prevDayNode.PositivosAcumulados, "up")} */}
       </li>
       <li>
-        157
+        {currentNode.professionals_positius}
         <p>Professionals positius</p>
-        {/* {prevDayNode && dayDiff(currentNode.stars, prevDayNode.stars, "up")} */}
       </li>
     </ul>
   </section>

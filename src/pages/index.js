@@ -47,7 +47,7 @@ export default () => {
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
 
   let currentNode = nodes[nodes.length - 1]
-  let prevDayNode = nodes[nodes.length - 25] || null // Safety net if nodes is less than 24 in size.
+  let prevDayNode = nodes[nodes.length - 2]
 
   const formatAndTranslateCurrentDate = (date) => {
     let currentDate = moment(date, 'YYYY-MM-DD').format('DD MMMM YYYY')
@@ -88,21 +88,21 @@ export default () => {
             color={PURPLE}
             color2={GREEN}
           />
-          <IslandsOverview islands="MALLORCA" 
-            hospitalized="348" 
-            uci="?"
+          <IslandsOverview islands="MALLORCA"
+            hospitalized="348"
+            uci="70"
             positiveProfs="151"
             watchedProfs="228"
             uvac="612" />
           <IslandsOverview islands="MENORCA"
-            hospitalized="12" 
-            uci="?"
+            hospitalized="12"
+            uci="5"
             positiveProfs="3"
             watchedProfs="7"
             uvac="20" />
           <IslandsOverview islands="EIVISSA I FORMENTERA"
-            hospitalized="47" 
-            uci="?"
+            hospitalized="47"
+            uci="13"
             positiveProfs="3"
             watchedProfs="11"
             uvac="30" />
