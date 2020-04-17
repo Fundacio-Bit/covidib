@@ -2,6 +2,8 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Styled } from 'theme-ui'
 import moment from 'moment'
+import 'moment/locale/ca'
+import 'moment/locale/es'
 import last from 'lodash/last'
 
 import StatChart from '../components/StatChart'
