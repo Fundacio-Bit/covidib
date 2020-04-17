@@ -38,7 +38,20 @@ export default () => {
           positius_actius,
           hospitalitzats,
           uci,
-          professionals_positius
+          professionals_positius,
+          mallorca_hospitalizats,
+          mallorca_professionals_positius,
+          mallorca_professionals_en_vig,
+          mallorca_uvac,
+          menorca_hospitalizats,
+          menorca_professionals_positius,
+          menorca_professionals_en_vig,
+          menorca_uvac,
+          ibiza_hospitalizats,
+          ibiza_professionals_positius,
+          ibiza_professionals_en_vig,
+          ibiza_uvac
+        
         }
       }
     }
@@ -89,23 +102,23 @@ export default () => {
             color2={GREEN}
           />
           <IslandsOverview islands="MALLORCA" 
-            hospitalized="348" 
+            hospitalized={currentNode.mallorca_hospitalizats}
             uci="?"
-            positiveProfs="151"
-            watchedProfs="228"
-            uvac="612" />
+            positiveProfs={currentNode.mallorca_professionals_positius}
+            watchedProfs={currentNode.mallorca_professionals_en_vig}
+            uvac={currentNode.mallorca_uvac} />
           <IslandsOverview islands="MENORCA"
-            hospitalized="12" 
+            hospitalized={currentNode.menorca_hospitalizats}
             uci="?"
-            positiveProfs="3"
-            watchedProfs="7"
-            uvac="20" />
+            positiveProfs={currentNode.menorca_professionals_positius}
+            watchedProfs={currentNode.menorca_professionals_en_vig}
+            uvac={currentNode.menorca_uvac} />
           <IslandsOverview islands="EIVISSA I FORMENTERA"
-            hospitalized="47" 
+            hospitalized={currentNode.ibiza_hospitalizats}
             uci="?"
-            positiveProfs="3"
-            watchedProfs="11"
-            uvac="30" />
+            positiveProfs={currentNode.ibiza_professionals_positius}
+            watchedProfs={currentNode.ibiza_professionals_en_vig}
+            uvac={currentNode.ibiza_uvac} />
           <StatChart
             title="CASOS NOUS"
             data={nodes}

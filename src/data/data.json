@@ -354,6 +354,18 @@
   "positius_actius": 588,
   "hospitalitzats": 326,
   "uci": 79,
-  "professionals_positius": 157
+  "professionals_positius": 157,
+  "mallorca_hospitalizats":348,
+  "mallorca_professionals_positius": 151,
+  "mallorca_professionals_en_vig": 228,
+  "mallorca_uvac": 151,
+  "menorca_hospitalizats":12,
+  "menorca_professionals_positius": 3,
+  "menorca_professionals_en_vig": 7,
+  "menorca_uvac": 20,
+  "ibiza_hospitalizats":47,
+  "ibiza_professionals_positius": 3,
+  "ibiza_professionals_en_vig": 11,
+  "ibiza_uvac": 30
 }
 ]
