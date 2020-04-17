@@ -29,14 +29,22 @@ export default () => {
           Recuperacions
           Increment
           PositivosAcumulados
-          fecha
+          fecha,
+          data,
+          nous_positius,
+          positius_acumulats,
+          curats,
+          exitus,
+          positius_actius,
+          hospitalitzats,
+          uci,
+          professionals_positius
         }
       }
     }
   `)
 
-  // let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
-  let nodes = data.allDataJson.nodes
+  let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
 
   let currentNode = nodes[nodes.length - 1]
   let prevDayNode = nodes[nodes.length - 25] || null // Safety net if nodes is less than 24 in size.
@@ -64,34 +72,34 @@ export default () => {
             color2={GREEN}
           />
           <IslandsOverview islands="MALLORCA" 
-            hospitalized="377" 
-            uci="70"
-            positiveProfs="169"
-            watchedProfs="239"
-            uvac="679" />
+            hospitalized="348" 
+            uci="?"
+            positiveProfs="151"
+            watchedProfs="228"
+            uvac="612" />
           <IslandsOverview islands="MENORCA"
-            hospitalized="16" 
-            uci="5"
-            positiveProfs="8"
-            watchedProfs="15"
-            uvac="28" />
-          <IslandsOverview islands="EIVISSA I FORMENTERA"
-            hospitalized="59" 
-            uci="13"
+            hospitalized="12" 
+            uci="?"
             positiveProfs="3"
-            watchedProfs="9"
-            uvac="31" />
+            watchedProfs="7"
+            uvac="20" />
+          <IslandsOverview islands="EIVISSA I FORMENTERA"
+            hospitalized="47" 
+            uci="?"
+            positiveProfs="3"
+            watchedProfs="11"
+            uvac="30" />
           <StatChart
             title="CASOS NOUS"
             data={nodes}
             yKey="CasosNous"
-            color={BLUE}
+            color={RED}
           />
           <StatChart
             title="INCREMENT CASOS %"
             data={nodes}
             yKey="Increment"
-            color={GREEN}
+            color={BLUE}
           />
           {/* <StatChart
             title="Evolucio casos notificats COVID-19"

@@ -5,7 +5,16 @@
    "CasosNous": 95,
    "Increment": 14.4,
    "Actius": 651,
-   "Recuperacions": 77
+   "Recuperacions": 77,
+   "data": "2020-03-27",
+   "nous_positius": 95,
+   "positius_acumulats": 755,
+   "curats": 67,
+   "exitus": 0,
+   "positius_actius": 571,
+   "hospitalitzats": 259,
+   "uci": 70,
+   "professionals_positius": 137
  },
  {
    "fecha": "28-mar",
@@ -13,7 +22,16 @@
    "CasosNous": 107,
    "Increment": 14.2,
    "Actius": 738,
-   "Recuperacions": 96
+   "Recuperacions": 96,
+   "data": "2020-03-28",
+   "nous_positius": 107,
+   "positius_acumulats": 862,
+   "curats": 94,
+   "exitus": 0,
+   "positius_actius": 737,
+   "hospitalitzats": 320,
+   "uci": 83,
+   "professionals_positius": 134
  },
  {
    "fecha": "29-mar",
@@ -21,7 +39,16 @@
    "CasosNous": 96,
    "Increment": 11.1,
    "Actius": 826,
-   "Recuperacions": 99
+   "Recuperacions": 99,
+   "data": "2020-03-29",
+   "nous_positius": 96,
+   "positius_acumulats": 958,
+   "curats": 98,
+   "exitus": 33,
+   "positius_actius": 828,
+   "hospitalitzats": 365,
+   "uci": 89,
+   "professionals_positius": 134
  },
  {
    "fecha": "30-mar",
@@ -133,7 +160,16 @@
    "CasosNous": 27,
    "Increment": 1.8,
    "Actius": 574,
-   "Recuperacions": 848
+   "Recuperacions": 848,
+   "data": "2020-04-12",
+   "nous_positius": 27,
+   "positius_acumulats": 1534,
+   "curats": 848,
+   "exitus": 112,
+   "positius_actius": 574,
+   "hospitalitzats": 369,
+   "uci": 91,
+   "professionals_positius": 179
  },
  {
    "fecha": "13-abr",
@@ -141,7 +177,16 @@
    "CasosNous": 16,
    "Increment": 1.0,
    "Actius": 571,
-   "Recuperacions": 862
+   "Recuperacions": 862,
+   "data": "2020-04-13",
+   "nous_positius": 16,
+   "positius_acumulats": 1550,
+   "curats": 862,
+   "exitus": 117,
+   "positius_actius": 571,
+   "hospitalitzats": 364,
+   "uci": 88,
+   "professionals_positius": 180
  },
  {
    "fecha": "14-abr",
@@ -149,6 +194,49 @@
    "CasosNous": 21,
    "Increment": 1.4,
    "Actius": 582,
-   "Recuperacions": 871
- }
+   "Recuperacions": 871,
+   "data": "2020-04-14",
+   "nous_positius": 21,
+   "positius_acumulats": 1571,
+   "curats": 871,
+   "exitus": 118,
+   "positius_actius": 582,
+   "hospitalitzats": 357,
+   "uci": 86,
+   "professionals_positius": 172
+ },
+ {
+  "fecha": "15-abr",
+  "PositivosAcumulados": 1606,
+  "CasosNous": 35,
+  "Increment": 2.2,
+  "Actius": 582,
+  "Recuperacions": 881,
+  "data": "2020-04-15",
+  "nous_positius": 35,
+  "positius_acumulats": 1606,
+  "curats": 881,
+  "exitus": 125,
+  "positius_actius": 600,
+  "hospitalitzats": 340,
+  "uci": 83,
+  "professionals_positius": 164
+},
+{
+  "fecha": "16-abr",
+  "PositivosAcumulados": 1637,
+  "CasosNous": 31,
+  "Increment": 1.9,
+  "Actius": 582,
+  "Recuperacions": 918,
+  "data": "2020-04-16",
+  "nous_positius": 31,
+  "positius_acumulats": 1637,
+  "curats": 918,
+  "exitus": 131,
+  "positius_actius": 588,
+  "hospitalitzats": 326,
+  "uci": 79,
+  "professionals_positius": 157
+}
 ]

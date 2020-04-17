@@ -30,47 +30,47 @@ const Overview = ({ currentNode, prevDayNode }) => (
     <h2>SITUACIÓ ACTUAL A LES ILLES BALEARS</h2>
     <ul>
       <li>
-        16
+        31
         <p>Nous positius</p>
         {prevDayNode &&
           dayDiff(2, 1, "up")}
       </li>
       <li>
-        862
+        918
         <p>Curats</p>
         {/* {prevDayNode &&
           dayDiff(currentNode.Actius, prevDayNode.Actius, "up")} */}
       </li>
       <li>
-        117
+        131
         <p>Exitus</p>
         {/* {prevDayNode &&
           dayDiff(currentNode.Increment, prevDayNode.Increment, "down")} */}
       </li>
       <li>
-        571
+        588
         <p>Positius actius</p>
         {/* {prevDayNode &&
           dayDiff(currentNode.mergedPRs, prevDayNode.mergedPRs, "up")} */}
       </li>
       <li>
-        1550
+        1637
         <p>Positius acumulats</p>
         {/* {prevDayNode &&
           dayDiff(currentNode.CasosNous, prevDayNode.CasosNous, "up")} */}
       </li>
       <li>
-        452
+        326
         <p>Hospitalitzats</p>
         {/* {prevDayNode && dayDiff(currentNode.PositivosAcumulados, prevDayNode.PositivosAcumulados, "up")} */}
       </li>
       <li>
-        88
+        79
         <p>UCI</p>
         {/* {prevDayNode && dayDiff(currentNode.PositivosAcumulados, prevDayNode.PositivosAcumulados, "up")} */}
       </li>
       <li>
-        180
+        157
         <p>Professionals positius</p>
         {/* {prevDayNode && dayDiff(currentNode.stars, prevDayNode.stars, "up")} */}
       </li>
