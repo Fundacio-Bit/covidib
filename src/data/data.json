@@ -1,6 +1,5 @@
 [
   {
-    "fecha": "27-mar",
     "percentatge_increment": 14.4,
     "actius": 651,
     "data": "2020-03-27",
@@ -14,7 +13,6 @@
     "professionals_positius": 137
   },
   {
-    "fecha": "28-mar",
     "percentatge_increment": 14.2,
     "actius": 738,
     "data": "2020-03-28",
@@ -28,7 +26,6 @@
     "professionals_positius": 134
   },
   {
-    "fecha": "29-mar",
     "percentatge_increment": 11.1,
     "actius": 826,
     "data": "2020-03-29",
@@ -42,7 +39,6 @@
     "professionals_positius": 134
   },
   {
-    "fecha": "30-mar",
     "percentatge_increment": 4.4,
     "actius": 856,
     "data": "2020-03-30",
@@ -56,7 +52,6 @@
     "professionals_positius": 150
   },
   {
-    "fecha": "31-mar",
     "percentatge_increment": 6.9,
     "actius": 909,
     "data": "2020-03-31",
@@ -70,7 +65,6 @@
     "professionals_positius": 175
   },
   {
-    "fecha": "01-abr",
     "percentatge_increment": 5.8,
     "actius": 904,
     "data": "2020-04-01",
@@ -84,7 +78,6 @@
     "professionals_positius": 180
   },
   {
-    "fecha": "02-abr",
     "percentatge_increment": 6.5,
     "actius": 907,
     "data": "2020-04-02",
@@ -98,7 +91,6 @@
     "professionals_positius": 188
   },
   {
-    "fecha": "03-abr",
     "percentatge_increment": 4.4,
     "actius": 813,
     "data": "2020-04-03",
@@ -112,7 +104,6 @@
     "professionals_positius": 195
   },
   {
-    "fecha": "04-abr",
     "percentatge_increment": 1.1,
     "actius": 778,
     "data": "2020-04-12",
@@ -126,7 +117,6 @@
     "professionals_positius": 196
   },
   {
-    "fecha": "05-abr",
     "percentatge_increment": 1.7,
     "actius": 757,
     "data": "2020-04-05",
@@ -140,7 +130,6 @@
     "professionals_positius": 194
   },
   {
-    "fecha": "06-abr",
     "percentatge_increment": 2.1,
     "actius": 708,
     "data": "2020-04-06",
@@ -154,7 +143,6 @@
     "professionals_positius": 203
   },
   {
-    "fecha": "07-abr",
     "percentatge_increment": 3.7,
     "actius": 748,
     "data": "2020-04-07",
@@ -168,7 +156,6 @@
     "professionals_positius": 204
   },
   {
-    "fecha": "08-abr",
     "percentatge_increment": 3.1,
     "actius": 707,
     "data": "2020-04-08",
@@ -182,7 +169,6 @@
     "professionals_positius": 194
   },
   {
-    "fecha": "09-abr",
     "percentatge_increment": 2.5,
     "actius": 663,
     "data": "2020-04-09",
@@ -196,7 +182,6 @@
     "professionals_positius": 187
   },
   {
-    "fecha": "10-abr",
     "percentatge_increment": 2.8,
     "actius": 654,
     "data": "2020-04-10",
@@ -210,7 +195,6 @@
     "professionals_positius": 187
   },
   {
-    "fecha": "11-abr",
     "percentatge_increment": 1.3,
     "actius": 648,
     "data": "2020-04-11",
@@ -224,7 +208,6 @@
     "professionals_positius": 177
   },
   {
-    "fecha": "12-abr",
     "percentatge_increment": 1.8,
     "actius": 574,
     "data": "2020-04-12",
@@ -238,7 +221,6 @@
     "professionals_positius": 179
   },
   {
-    "fecha": "13-abr",
     "percentatge_increment": 1.0,
     "actius": 571,
     "data": "2020-04-13",
@@ -252,7 +234,6 @@
     "professionals_positius": 180
   },
   {
-    "fecha": "2020/04/14",
     "percentatge_increment": 1.4,
     "actius": 582,
     "data": "2020-04-14",
@@ -266,7 +247,6 @@
     "professionals_positius": 172
   },
   {
-    "fecha": "15-abr",
     "percentatge_increment": 2.2,
     "actius": 582,
     "data": "2020-04-15",
@@ -280,7 +260,6 @@
     "professionals_positius": 164
   },
   {
-    "fecha": "16-abr",
     "percentatge_increment": 1.9,
     "actius": 582,
     "data": "2020-04-16",
@@ -306,7 +285,6 @@
     "ibiza_uvac": 30
   },
   {
-    "fecha": "17-abr",
     "percentatge_increment": 1.9,
     "actius": 582,
     "data": "2020-04-17",

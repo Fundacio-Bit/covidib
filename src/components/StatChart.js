@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import {
   LineChart,
   Line,
@@ -7,15 +7,15 @@ import {
   YAxis,
   Tooltip,
   Legend,
-  ResponsiveContainer,
-} from "recharts"
-import moment from "moment"
-import { css } from "theme-ui"
+  ResponsiveContainer
+} from 'recharts'
+import moment from 'moment'
+import { css } from 'theme-ui'
 
 const interval = 50
 
-const StatChart = ({ title, data, yKey, color }) => {
-  let datapoints = data.map(dataEntry => dataEntry[yKey])
+const StatChart = ({ title, data, yKey, xKey, color }) => {
+  let datapoints = data.map((dataEntry) => dataEntry[yKey])
 
   // let max = Math.max(...datapoints)
   // let min = Math.min(...datapoints)
@@ -43,7 +43,7 @@ const StatChart = ({ title, data, yKey, color }) => {
             isAnimationActive={false}
           />
           <XAxis
-            dataKey="fecha"
+            dataKey={xKey}
             // tickFormatter={time => moment.unix(time).format("YYYY-MM-DD")}
             // minTickGap={20}
             // padding={{ left: 10, right: 10 }}
@@ -51,8 +51,8 @@ const StatChart = ({ title, data, yKey, color }) => {
           <YAxis
             interval={0}
             domain={[
-              dataMin => Math.floor(dataMin / interval) * interval,
-              dataMax => Math.ceil(dataMax / interval) * interval,
+              (dataMin) => Math.floor(dataMin / interval) * interval,
+              (dataMax) => Math.ceil(dataMax / interval) * interval
             ]}
           />
           <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />

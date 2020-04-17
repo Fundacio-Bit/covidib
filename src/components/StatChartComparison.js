@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import {
   LineChart,
   Line,
@@ -7,14 +7,22 @@ import {
   YAxis,
   Tooltip,
   Legend,
-  ResponsiveContainer,
-} from "recharts"
-import moment from "moment"
+  ResponsiveContainer
+} from 'recharts'
+import moment from 'moment'
 // import { css } from "theme-ui"
 
 const interval = 50
 
-const StatChartComparison = ({ title, data, yKey, color, y2Key, color2 }) => {
+const StatChartComparison = ({
+  title,
+  data,
+  yKey,
+  xKey,
+  color,
+  y2Key,
+  color2
+}) => {
   // let datapoints = data.map(dataEntry => dataEntry[yKey])
 
   // let max = Math.max(...datapoints)
@@ -52,7 +60,7 @@ const StatChartComparison = ({ title, data, yKey, color, y2Key, color2 }) => {
             isAnimationActive={false}
           />
           <XAxis
-            dataKey="fecha"
+            dataKey={xKey}
             // tickFormatter={time => moment.unix(time).format("YYYY-MM-DD")}
             // minTickGap={5}
             // padding={{ left: 10, right: 10 }}
@@ -60,8 +68,8 @@ const StatChartComparison = ({ title, data, yKey, color, y2Key, color2 }) => {
           <YAxis
             interval={0}
             domain={[
-              dataMin => Math.floor(dataMin / interval) * interval,
-              dataMax => Math.ceil(dataMax / interval) * interval,
+              (dataMin) => Math.floor(dataMin / interval) * interval,
+              (dataMax) => Math.ceil(dataMax / interval) * interval
             ]}
           />
         </LineChart>

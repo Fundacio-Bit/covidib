@@ -26,7 +26,6 @@ export default () => {
       allDataJson {
         nodes {
           percentatge_increment
-          fecha
           data
           nous_positius
           positius_acumulats
@@ -89,6 +88,7 @@ export default () => {
             title="RECUPERACIONS DEFINITIVES"
             data={nodes}
             yKey="curats"
+            xKey="data"
             color={GREEN}
           />
           <StatChartComparison
@@ -96,6 +96,7 @@ export default () => {
             data={nodes}
             yKey="positius_actius"
             y2Key="curats"
+            xKey="data"
             color={PURPLE}
             color2={GREEN}
           />
@@ -127,12 +128,14 @@ export default () => {
             title="CASOS NOUS"
             data={nodes}
             yKey="nous_positius"
+            xKey="data"
             color={RED}
           />
           <StatChart
             title="% INCREMENT CASOS"
             data={nodes}
             yKey="percentatge_increment"
+            xKey="data"
             color={BLUE}
           />
           <Footer />
