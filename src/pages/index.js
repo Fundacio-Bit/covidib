@@ -51,7 +51,6 @@ export default () => {
           ibiza_professionals_positius,
           ibiza_professionals_en_vig,
           ibiza_uvac
-        
         }
       }
     }

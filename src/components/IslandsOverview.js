@@ -32,7 +32,7 @@ const Overview = ({ currentNode, prevDayNode, islands, hospitalized, uci, positi
       <li>
         {hospitalized}
         <p>Hospitalitzats</p>
-        <p>({uci} UCI)</p>
+        {/* <p>({uci} UCI)</p> */}
         {/* {prevDayNode &&
           dayDiff(2, 1, "up")} */}
       </li>
