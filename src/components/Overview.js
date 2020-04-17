@@ -69,6 +69,11 @@ const Overview = ({ currentNode, prevDayNode }) => (
         <p>UCI</p>
         {/* {prevDayNode && dayDiff(currentNode.stars, prevDayNode.stars, "up")} */}
       </li>
+      <li>
+        180
+        <p>Professionals positius</p>
+        {/* {prevDayNode && dayDiff(currentNode.stars, prevDayNode.stars, "up")} */}
+      </li>
     </ul>
   </section>
 )
