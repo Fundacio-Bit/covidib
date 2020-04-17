@@ -8,6 +8,7 @@ import StatChartComparison from "../components/StatChartComparison"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Overview from "../components/Overview"
+import IslandsOverview from "../components/IslandsOverview"
 
 import "./index.css"
 
@@ -62,6 +63,24 @@ export default () => {
             color={PURPLE}
             color2={GREEN}
           />
+          <IslandsOverview islands="MALLORCA" 
+            hospitalized="377" 
+            uci="70"
+            positiveProfs="169"
+            watchedProfs="239"
+            uvac="679" />
+          <IslandsOverview islands="MENORCA"
+            hospitalized="16" 
+            uci="5"
+            positiveProfs="8"
+            watchedProfs="15"
+            uvac="28" />
+          <IslandsOverview islands="EIVISSA I FORMENTERA"
+            hospitalized="59" 
+            uci="13"
+            positiveProfs="3"
+            watchedProfs="9"
+            uvac="31" />
           <StatChart
             title="CASOS NOUS"
             data={nodes}
