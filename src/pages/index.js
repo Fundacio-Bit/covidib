@@ -50,7 +50,7 @@ export default () => {
   let prevDayNode = nodes[nodes.length - 25] || null // Safety net if nodes is less than 24 in size.
 
   const formatAndTranslateCurrentDate = (date) => {
-    let currentDate = moment(date, 'YYYY/MM/DD').format('DD MMMM YYYY')
+    let currentDate = moment(date, 'YYYY-MM-DD').format('DD MMMM YYYY')
     currentDate = currentDate.replace('January', 'Gener')
     currentDate = currentDate.replace('February', 'Febrer')
     currentDate = currentDate.replace('March', 'Març')
@@ -69,7 +69,7 @@ export default () => {
   return (
     <Styled.root>
       <Header
-        lastUpdatedTime={formatAndTranslateCurrentDate(currentNode.fecha)}
+        lastUpdatedTime={formatAndTranslateCurrentDate(currentNode.data)}
       />
       <main>
         <div className="container">
