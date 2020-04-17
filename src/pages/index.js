@@ -60,7 +60,7 @@ export default () => {
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
 
   let currentNode = nodes[nodes.length - 1]
-  let prevDayNode = nodes[nodes.length - 25] || null // Safety net if nodes is less than 24 in size.
+  let prevDayNode = nodes[nodes.length - 2]
 
   const formatAndTranslateCurrentDate = (date) => {
     let currentDate = moment(date, 'YYYY-MM-DD').format('DD MMMM YYYY')
