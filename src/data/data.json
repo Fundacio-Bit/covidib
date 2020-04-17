@@ -2,7 +2,7 @@
   {
     "percentatge_increment": 14.4,
     "actius": 651,
-    "data": "2020-03-27",
+    "data": "2020-03-27T00:00:00.000Z",
     "nous_positius": 95,
     "positius_acumulats": 755,
     "curats": 67,
@@ -15,7 +15,7 @@
   {
     "percentatge_increment": 14.2,
     "actius": 738,
-    "data": "2020-03-28",
+    "data": "2020-03-28T00:00:00.000Z",
     "nous_positius": 107,
     "positius_acumulats": 862,
     "curats": 94,
@@ -28,7 +28,7 @@
   {
     "percentatge_increment": 11.1,
     "actius": 826,
-    "data": "2020-03-29",
+    "data": "2020-03-29T00:00:00.000Z",
     "nous_positius": 96,
     "curats": 98,
     "exitus": 33,
@@ -41,7 +41,7 @@
   {
     "percentatge_increment": 4.4,
     "actius": 856,
-    "data": "2020-03-30",
+    "data": "2020-03-30T00:00:00.000Z",
     "nous_positius": 42,
     "curats": 99,
     "exitus": null,
@@ -54,7 +54,7 @@
   {
     "percentatge_increment": 6.9,
     "actius": 909,
-    "data": "2020-03-31",
+    "data": "2020-03-31T00:00:00.000Z",
     "nous_positius": 69,
     "curats": 111,
     "exitus": 43,
@@ -67,7 +67,7 @@
   {
     "percentatge_increment": 5.8,
     "actius": 904,
-    "data": "2020-04-01",
+    "data": "2020-04-01T00:00:00.000Z",
     "nous_positius": 62,
     "curats": 170,
     "exitus": 51,
@@ -80,7 +80,7 @@
   {
     "percentatge_increment": 6.5,
     "actius": 907,
-    "data": "2020-04-02",
+    "data": "2020-04-02T00:00:00.000Z",
     "nous_positius": 73,
     "curats": 239,
     "exitus": 57,
@@ -93,7 +93,7 @@
   {
     "percentatge_increment": 4.4,
     "actius": 813,
-    "data": "2020-04-03",
+    "data": "2020-04-03T00:00:00.000Z",
     "nous_positius": 53,
     "curats": 375,
     "exitus": 69,
@@ -106,7 +106,7 @@
   {
     "percentatge_increment": 1.1,
     "actius": 778,
-    "data": "2020-04-12",
+    "data": "2020-04-12T00:00:00.000Z",
     "nous_positius": 14,
     "curats": 422,
     "exitus": 71,
@@ -119,7 +119,7 @@
   {
     "percentatge_increment": 1.7,
     "actius": 757,
-    "data": "2020-04-05",
+    "data": "2020-04-05T00:00:00.000Z",
     "nous_positius": 22,
     "positius_acumulats": 1293,
     "curats": 461,
@@ -132,7 +132,7 @@
   {
     "percentatge_increment": 2.1,
     "actius": 708,
-    "data": "2020-04-06",
+    "data": "2020-04-06T00:00:00.000Z",
     "nous_positius": 27,
     "positius_acumulats": 1320,
     "curats": 531,
@@ -145,7 +145,7 @@
   {
     "percentatge_increment": 3.7,
     "actius": 748,
-    "data": "2020-04-07",
+    "data": "2020-04-07T00:00:00.000Z",
     "nous_positius": 49,
     "positius_acumulats": 1369,
     "curats": 537,
@@ -158,7 +158,7 @@
   {
     "percentatge_increment": 3.1,
     "actius": 707,
-    "data": "2020-04-08",
+    "data": "2020-04-08T00:00:00.000Z",
     "nous_positius": 43,
     "positius_acumulats": 1412,
     "curats": 616,
@@ -171,7 +171,7 @@
   {
     "percentatge_increment": 2.5,
     "actius": 663,
-    "data": "2020-04-09",
+    "data": "2020-04-09T00:00:00.000Z",
     "nous_positius": 36,
     "positius_acumulats": 1448,
     "curats": 696,
@@ -184,7 +184,7 @@
   {
     "percentatge_increment": 2.8,
     "actius": 654,
-    "data": "2020-04-10",
+    "data": "2020-04-10T00:00:00.000Z",
     "nous_positius": 40,
     "positius_acumulats": 1488,
     "curats": 737,
@@ -197,7 +197,7 @@
   {
     "percentatge_increment": 1.3,
     "actius": 648,
-    "data": "2020-04-11",
+    "data": "2020-04-11T00:00:00.000Z",
     "nous_positius": 19,
     "positius_acumulats": 1507,
     "curats": 757,
@@ -210,7 +210,7 @@
   {
     "percentatge_increment": 1.8,
     "actius": 574,
-    "data": "2020-04-12",
+    "data": "2020-04-12T00:00:00.000Z",
     "nous_positius": 27,
     "positius_acumulats": 1534,
     "curats": 848,
@@ -223,7 +223,7 @@
   {
     "percentatge_increment": 1.0,
     "actius": 571,
-    "data": "2020-04-13",
+    "data": "2020-04-13T00:00:00.000Z",
     "nous_positius": 16,
     "positius_acumulats": 1550,
     "curats": 862,
@@ -236,7 +236,7 @@
   {
     "percentatge_increment": 1.4,
     "actius": 582,
-    "data": "2020-04-14",
+    "data": "2020-04-14T00:00:00.000Z",
     "nous_positius": 21,
     "positius_acumulats": 1571,
     "curats": 871,
@@ -249,7 +249,7 @@
   {
     "percentatge_increment": 2.2,
     "actius": 582,
-    "data": "2020-04-15",
+    "data": "2020-04-15T00:00:00.000Z",
     "nous_positius": 35,
     "positius_acumulats": 1606,
     "curats": 881,
@@ -262,7 +262,7 @@
   {
     "percentatge_increment": 1.9,
     "actius": 582,
-    "data": "2020-04-16",
+    "data": "2020-04-16T00:00:00.000Z",
     "nous_positius": 31,
     "positius_acumulats": 1637,
     "curats": 918,
@@ -287,7 +287,7 @@
   {
     "percentatge_increment": 1.9,
     "actius": 582,
-    "data": "2020-04-17",
+    "data": "2020-04-17T00:00:00.000Z",
     "nous_positius": 31,
     "positius_acumulats": 1668,
     "curats": 938,
