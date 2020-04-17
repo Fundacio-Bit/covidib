@@ -17,14 +17,14 @@ const interval = 50
 const StatChart = ({ title, data, yKey, color }) => {
   let datapoints = data.map(dataEntry => dataEntry[yKey])
 
-  let max = Math.max(...datapoints)
-  let min = Math.min(...datapoints)
+  // let max = Math.max(...datapoints)
+  // let min = Math.min(...datapoints)
 
-  let first = data[0]
-  let last = data[data.length - 1]
+  // let first = data[0]
+  // let last = data[data.length - 1]
 
-  first = { timestamp: first.timestamp, [yKey]: first[yKey] }
-  last = { timestamp: last.timestamp, [yKey]: last[yKey] }
+  // first = { timestamp: first.timestamp, [yKey]: first[yKey] }
+  // last = { timestamp: last.timestamp, [yKey]: last[yKey] }
 
   return (
     <section>
@@ -42,10 +42,10 @@ const StatChart = ({ title, data, yKey, color }) => {
             isAnimationActive={false}
           />
           <XAxis
-            dataKey="timestamp"
-            tickFormatter={time => moment.unix(time).format("YYYY-MM-DD")}
-            minTickGap={20}
-            padding={{ left: 10, right: 10 }}
+            dataKey="fecha"
+            // tickFormatter={time => moment.unix(time).format("YYYY-MM-DD")}
+            // minTickGap={20}
+            // padding={{ left: 10, right: 10 }}
           />
           <YAxis
             interval={0}
@@ -57,7 +57,7 @@ const StatChart = ({ title, data, yKey, color }) => {
           <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
         </LineChart>
       </ResponsiveContainer>
-      <div
+      {/* <div
         css={css({
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
@@ -82,7 +82,7 @@ const StatChart = ({ title, data, yKey, color }) => {
           <h3>Min Value</h3>
           <p>{min + " " + title}</p>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

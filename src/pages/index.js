@@ -23,18 +23,19 @@ export default () => {
       allDataJson {
         nodes {
           Actius
-          closedPRs
-          mergedPRs
+          CasosNous
+          PositivosAcumulados
           Recuperacions
-          openPRs
-          stars
-          timestamp
+          Increment
+          PositivosAcumulados
+          fecha
         }
       }
     }
   `)
 
-  let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
+  // let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
+  let nodes = data.allDataJson.nodes
 
   let currentNode = nodes[nodes.length - 1]
   let prevDayNode = nodes[nodes.length - 25] || null // Safety net if nodes is less than 24 in size.
@@ -58,28 +59,28 @@ export default () => {
             data={nodes}
             yKey="Actius"
             y2Key="Recuperacions"
-            color={RED}
-            color2={BLUE}
+            color={PURPLE}
+            color2={GREEN}
           />
           <StatChart
-            title="Open PRs"
+            title="Increment Casos %"
             data={nodes}
-            yKey="openPRs"
+            yKey="Increment"
             color={GREEN}
           />
           <StatChart
-            title="Merged PRs"
+            title="Positivos Acumulados"
             data={nodes}
-            yKey="mergedPRs"
+            yKey="PositivosAcumulados"
             color={PURPLE}
           />
           <StatChart
-            title="Closed PRs"
+            title="Casos Nous"
             data={nodes}
-            yKey="closedPRs"
-            color={RED}
+            yKey="CasosNous"
+            color={BLUE}
           />
-          <StatChart title="Stars" data={nodes} yKey="stars" color={GOLD} />
+          <StatChart title="Stars" data={nodes} yKey="PositivosAcumulados" color={GOLD} />
           <Footer />
         </div>
       </main>
