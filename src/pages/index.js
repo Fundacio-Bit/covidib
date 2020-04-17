@@ -11,14 +11,9 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Overview from '../components/Overview'
 import IslandsOverview from '../components/IslandsOverview'
+import Colors from '../constants/Colors'
 
 import './index.css'
-
-const RED = 'rgb(203, 36, 49)'
-const GREEN = 'rgb(40, 167, 69)'
-const PURPLE = 'rgb(102, 51, 153)'
-const GOLD = 'rgb(255, 182, 30)'
-const BLUE = 'rgb(136, 132, 216)'
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -54,7 +49,6 @@ export default () => {
 
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
 
-  // let currentNode = nodes[nodes.length - 1];
   const currentNode = last(nodes)
   let prevDayNode = nodes[nodes.length - 2]
 
@@ -89,7 +83,7 @@ export default () => {
             data={nodes}
             yKey="curats"
             xKey="data"
-            color={GREEN}
+            color={Colors.green}
           />
           <StatChartComparison
             title="COMPARACIÓ CASOS ACTIUS i RECUPERACIONS"
@@ -97,8 +91,8 @@ export default () => {
             yKey="positius_actius"
             y2Key="curats"
             xKey="data"
-            color={PURPLE}
-            color2={GREEN}
+            color={Colors.purple}
+            color2={Colors.green}
           />
           <IslandsOverview
             islands="MALLORCA"
@@ -129,14 +123,14 @@ export default () => {
             data={nodes}
             yKey="nous_positius"
             xKey="data"
-            color={RED}
+            color={Colors.red}
           />
           <StatChart
             title="% INCREMENT CASOS"
             data={nodes}
             yKey="percentatge_increment"
             xKey="data"
-            color={BLUE}
+            color={Colors.blue}
           />
           <Footer />
         </div>
