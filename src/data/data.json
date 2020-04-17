@@ -1,10 +1,8 @@
 [
   {
     "fecha": "27-mar",
-
     "percentatge_increment": 14.4,
-    "Actius": 651,
-    "Recuperacions": 77,
+    "actius": 651,
     "data": "2020-03-27",
     "nous_positius": 95,
     "positius_acumulats": 755,
@@ -17,10 +15,8 @@
   },
   {
     "fecha": "28-mar",
-
     "percentatge_increment": 14.2,
-    "Actius": 738,
-    "Recuperacions": 96,
+    "actius": 738,
     "data": "2020-03-28",
     "nous_positius": 107,
     "positius_acumulats": 862,
@@ -33,10 +29,8 @@
   },
   {
     "fecha": "29-mar",
-
     "percentatge_increment": 11.1,
-    "Actius": 826,
-    "Recuperacions": 99,
+    "actius": 826,
     "data": "2020-03-29",
     "nous_positius": 96,
     "curats": 98,
@@ -49,10 +43,8 @@
   },
   {
     "fecha": "30-mar",
-
     "percentatge_increment": 4.4,
-    "Actius": 856,
-    "Recuperacions": 107,
+    "actius": 856,
     "data": "2020-03-30",
     "nous_positius": 42,
     "curats": 99,
@@ -65,10 +57,8 @@
   },
   {
     "fecha": "31-mar",
-
     "percentatge_increment": 6.9,
-    "Actius": 909,
-    "Recuperacions": 111,
+    "actius": 909,
     "data": "2020-03-31",
     "nous_positius": 69,
     "curats": 111,
@@ -81,10 +71,8 @@
   },
   {
     "fecha": "01-abr",
-
     "percentatge_increment": 5.8,
-    "Actius": 904,
-    "Recuperacions": 170,
+    "actius": 904,
     "data": "2020-04-01",
     "nous_positius": 62,
     "curats": 170,
@@ -97,10 +85,8 @@
   },
   {
     "fecha": "02-abr",
-
     "percentatge_increment": 6.5,
-    "Actius": 907,
-    "Recuperacions": 239,
+    "actius": 907,
     "data": "2020-04-02",
     "nous_positius": 73,
     "curats": 239,
@@ -113,10 +99,8 @@
   },
   {
     "fecha": "03-abr",
-
     "percentatge_increment": 4.4,
-    "Actius": 813,
-    "Recuperacions": 375,
+    "actius": 813,
     "data": "2020-04-03",
     "nous_positius": 53,
     "curats": 375,
@@ -129,10 +113,8 @@
   },
   {
     "fecha": "04-abr",
-
     "percentatge_increment": 1.1,
-    "Actius": 778,
-    "Recuperacions": 422,
+    "actius": 778,
     "data": "2020-04-12",
     "nous_positius": 14,
     "curats": 422,
@@ -145,10 +127,8 @@
   },
   {
     "fecha": "05-abr",
-
     "percentatge_increment": 1.7,
-    "Actius": 757,
-    "Recuperacions": 461,
+    "actius": 757,
     "data": "2020-04-05",
     "nous_positius": 22,
     "positius_acumulats": 1293,
@@ -161,10 +141,8 @@
   },
   {
     "fecha": "06-abr",
-
     "percentatge_increment": 2.1,
-    "Actius": 708,
-    "Recuperacions": 531,
+    "actius": 708,
     "data": "2020-04-06",
     "nous_positius": 27,
     "positius_acumulats": 1320,
@@ -177,10 +155,8 @@
   },
   {
     "fecha": "07-abr",
-
     "percentatge_increment": 3.7,
-    "Actius": 748,
-    "Recuperacions": 537,
+    "actius": 748,
     "data": "2020-04-07",
     "nous_positius": 49,
     "positius_acumulats": 1369,
@@ -193,10 +169,8 @@
   },
   {
     "fecha": "08-abr",
-
     "percentatge_increment": 3.1,
-    "Actius": 707,
-    "Recuperacions": 616,
+    "actius": 707,
     "data": "2020-04-08",
     "nous_positius": 43,
     "positius_acumulats": 1412,
@@ -209,10 +183,8 @@
   },
   {
     "fecha": "09-abr",
-
     "percentatge_increment": 2.5,
-    "Actius": 663,
-    "Recuperacions": 696,
+    "actius": 663,
     "data": "2020-04-09",
     "nous_positius": 36,
     "positius_acumulats": 1448,
@@ -225,10 +197,8 @@
   },
   {
     "fecha": "10-abr",
-
     "percentatge_increment": 2.8,
-    "Actius": 654,
-    "Recuperacions": 737,
+    "actius": 654,
     "data": "2020-04-10",
     "nous_positius": 40,
     "positius_acumulats": 1488,
@@ -241,10 +211,8 @@
   },
   {
     "fecha": "11-abr",
-
     "percentatge_increment": 1.3,
-    "Actius": 648,
-    "Recuperacions": 757,
+    "actius": 648,
     "data": "2020-04-11",
     "nous_positius": 19,
     "positius_acumulats": 1507,
@@ -257,10 +225,8 @@
   },
   {
     "fecha": "12-abr",
-
     "percentatge_increment": 1.8,
-    "Actius": 574,
-    "Recuperacions": 848,
+    "actius": 574,
     "data": "2020-04-12",
     "nous_positius": 27,
     "positius_acumulats": 1534,
@@ -273,10 +239,8 @@
   },
   {
     "fecha": "13-abr",
-
     "percentatge_increment": 1.0,
-    "Actius": 571,
-    "Recuperacions": 862,
+    "actius": 571,
     "data": "2020-04-13",
     "nous_positius": 16,
     "positius_acumulats": 1550,
@@ -289,10 +253,8 @@
   },
   {
     "fecha": "2020/04/14",
-
     "percentatge_increment": 1.4,
-    "Actius": 582,
-    "Recuperacions": 871,
+    "actius": 582,
     "data": "2020-04-14",
     "nous_positius": 21,
     "positius_acumulats": 1571,
@@ -305,10 +267,8 @@
   },
   {
     "fecha": "15-abr",
-
     "percentatge_increment": 2.2,
-    "Actius": 582,
-    "Recuperacions": 881,
+    "actius": 582,
     "data": "2020-04-15",
     "nous_positius": 35,
     "positius_acumulats": 1606,
@@ -321,10 +281,8 @@
   },
   {
     "fecha": "16-abr",
-
     "percentatge_increment": 1.9,
-    "Actius": 582,
-    "Recuperacions": 918,
+    "actius": 582,
     "data": "2020-04-16",
     "nous_positius": 31,
     "positius_acumulats": 1637,
@@ -349,10 +307,8 @@
   },
   {
     "fecha": "17-abr",
-
     "percentatge_increment": 1.9,
-    "Actius": 582,
-    "Recuperacions": 918,
+    "actius": 582,
     "data": "2020-04-17",
     "nous_positius": 31,
     "positius_acumulats": 1668,
