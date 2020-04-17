@@ -1,4 +1,2 @@
+node_modules.env.cache/public
 node_modules
-.env
-.cache/
-public

@@ -4,7 +4,6 @@ A Gatsby project to display statistics COVID-19 at Balearic Islands.
 
 ![Example site for theme using gatsby as data](./captura.png)
 
-
 Rewrite...
 
 ## Example Site
@@ -46,22 +45,6 @@ module.exports = {
 }
 ```
 
-Next, create a file at `src/data/data.json` in your gatsby site and have it as the following format:
-
-```json
-[
-  {
-    "PositivosAcumulados": 35670,
-    "Increment": 84,
-    "fecha": 1560977138,
-    "closedIssues": 6355,
-    "CasosNous": 1094,
-    "openIssues": 442,
-    "mergedPRs": 6947
-  }
-]
-```
-
 Each item is a single datapoint. There is no max amount of datapoints you can have.
 
 Then finally run `yarn develop` and you should see the fully fleshed out site with graphs and all.
@@ -97,7 +80,7 @@ Here's an example of how to override it:
 // site/src/gatsby-plugin-theme-ui/index.js
 
 // import the gatsby-theme's theme.
-import Theme from "gatsby-theme-github-stats/src/gatsby-plugin-theme-ui"
+import Theme from 'gatsby-theme-github-stats/src/gatsby-plugin-theme-ui'
 
 export default {
   // copy over content from the default theme
@@ -107,8 +90,8 @@ export default {
     ...Theme.colors,
 
     // override headerBackground to be red
-    headerBackground: "red",
-  },
+    headerBackground: 'red'
+  }
 }
 ```
 
