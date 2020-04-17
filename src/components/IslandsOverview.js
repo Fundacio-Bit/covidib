@@ -25,43 +25,36 @@ import React from "react"
 //   }
 // }
 
-const Overview = ({ currentNode, prevDayNode }) => (
+const Overview = ({ currentNode, prevDayNode, islands, hospitalized, uci, positiveProfs, watchedProfs, uvac }) => (
   <section id="overview">
-    <h2>SITUACIÓ ACTUAL A LES ILLES BALEARS</h2>
+    <h2>CASOS {islands}</h2>
     <ul>
       <li>
-        {currentNode.nous_positius}
-        <p>Nous positius</p>
-        <p>({currentNode.Increment} %)</p>
-      </li>
-      <li>
-        {currentNode.curats}
-        <p>Curats</p>
-      </li>
-      <li>
-        {currentNode.exitus}
-        <p>Exitus</p>
-      </li>
-      <li>
-        {currentNode.positius_actius}
-        <p>Positius actius</p>
-      </li>
-      <li>
-        {currentNode.positius_acumulats}
-        <p>Positius acumulats</p>
-      </li>
-      <li>
-        {currentNode.hospitalitzats}
+        {hospitalized}
         <p>Hospitalitzats</p>
+        {/* <p>({uci} UCI)</p> */}
+        {/* {prevDayNode &&
+          dayDiff(2, 1, "up")} */}
       </li>
       <li>
-        {currentNode.uci}
-        <p>UCI</p>
-      </li>
-      <li>
-        {currentNode.professionals_positius}
+        {positiveProfs}
         <p>Professionals positius</p>
+        {/* {prevDayNode &&
+          dayDiff(currentNode.closedIssues, prevDayNode.closedIssues, "up")} */}
       </li>
+      <li>
+        {watchedProfs}
+        <p>Professionals en vigilància</p>
+        {/* {prevDayNode &&
+          dayDiff(currentNode.openPRs, prevDayNode.openPRs, "down")} */}
+      </li>
+      <li>
+        {uvac}
+        <p>UVAC</p>
+        {/* {prevDayNode &&
+          dayDiff(currentNode.mergedPRs, prevDayNode.mergedPRs, "up")} */}
+      </li>
+      <li>{' '}</li>
     </ul>
   </section>
 )
