@@ -8,22 +8,17 @@ import {
   XAxis,
   YAxis
 } from 'recharts'
-import { chain } from 'lodash'
 
 import Colors from '../constants/Colors'
 import displayDate from '../util/displayDate'
 
 const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
-  const deaths = chain(data)
-    .reject({ [yKey]: 0 })
-    .sortBy('data')
-    .value()
   return (
     <section>
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart
-          data={deaths}
+          data={data}
           margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
           <defs>
             <linearGradient id="colorAlm" x1="0" y1="0" x2="1" y2="0">

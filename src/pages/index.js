@@ -5,9 +5,11 @@ import 'moment/locale/ca'
 import 'moment/locale/es'
 import last from 'lodash/last'
 
+import LogDeaths from '../charts/LogDeaths'
+import LogCases from '../charts/LogCases'
+
 import StatChart from '../components/StatChart'
 import StatChartComparison from '../components/StatChartComparison'
-import LogChart from '../components/LogChart'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Overview from '../components/Overview'
@@ -99,19 +101,8 @@ export default () => {
             watchedProfs={currentNode.ibiza_professionals_en_vig}
             uvac={currentNode.ibiza_uvac}
           />
-          <LogChart
-            data={nodes}
-            title="EXITUS (logarítmic)"
-            yKey="exitus"
-            xKey="data"
-          />
-          <LogChart
-            data={nodes}
-            title="POSITIUS PER COVID-19 (logarítmic)"
-            yKey="positius_acumulats"
-            xKey="data"
-            displayAlarm={true}
-          />
+          <LogDeaths />
+          <LogCases />
           <StatChart
             title="CASOS NOUS"
             data={nodes}
@@ -120,6 +111,7 @@ export default () => {
             color={Colors.red}
           />
           <StatChart
+            isPercentageChart
             title="% INCREMENT CASOS"
             data={nodes}
             yKey="percentatge_increment"

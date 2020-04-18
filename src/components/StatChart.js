@@ -13,7 +13,7 @@ import { chain } from 'lodash'
 
 import displayDate from '../util/displayDate'
 
-const StatChart = ({ title, data, yKey, xKey, color }) => {
+const StatChart = ({ title, data, yKey, xKey, color, isPercentageChart }) => {
   const filteredData = chain(data)
     .reject({ [yKey]: null })
     .sortBy('data')
@@ -34,7 +34,10 @@ const StatChart = ({ title, data, yKey, xKey, color }) => {
             isAnimationActive={false}
           />
           <XAxis dataKey={xKey} tickFormatter={displayDate} />
-          <YAxis interval={0} />
+          <YAxis
+            interval={0}
+            domain={isPercentageChart ? [0, 100] : ['dataMin', 'dataMax']}
+          />
           <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
         </LineChart>
       </ResponsiveContainer>
