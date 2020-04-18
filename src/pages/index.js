@@ -8,7 +8,7 @@ import last from 'lodash/last'
 
 import StatChart from '../components/StatChart'
 import StatChartComparison from '../components/StatChartComparison'
-// import LogChart from "../components/LogChart";
+import LogChart from '../components/LogChart'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Overview from '../components/Overview'
@@ -79,7 +79,6 @@ export default () => {
       <main>
         <div className="container">
           <Overview currentNode={currentNode} prevDayNode={prevDayNode} />
-          {/* <LogChart data={nodes} title="Corba de casos" /> */}
           <StatChart
             title="RECUPERACIONS DEFINITIVES"
             data={nodes}
@@ -88,7 +87,7 @@ export default () => {
             color={Colors.green}
           />
           <StatChartComparison
-            title="COMPARACIÓ CASOS ACTIUS i RECUPERACIONS"
+            title="CASOS ACTIUS i RECUPERACIONS"
             data={nodes}
             yKey="positius_actius"
             y2Key="curats"
@@ -119,6 +118,19 @@ export default () => {
             positiveProfs={currentNode.ibiza_professionals_positius}
             watchedProfs={currentNode.ibiza_professionals_en_vig}
             uvac={currentNode.ibiza_uvac}
+          />
+          <LogChart
+            data={nodes}
+            title="EXITUS (logarítmic)"
+            yKey="exitus"
+            xKey="data"
+          />
+          <LogChart
+            data={nodes}
+            title="POSITIUS PER COVID-19 (logarítmic)"
+            yKey="positius_acumulats"
+            xKey="data"
+            displayAlarm={true}
           />
           <StatChart
             title="CASOS NOUS"

@@ -1,198 +1,108 @@
-import React from "react";
+import React from 'react'
 import {
   ResponsiveContainer,
   LineChart,
   ReferenceLine,
   ReferenceArea,
   Line,
-  CartesianGrid,
   XAxis,
-  YAxis,
-} from "recharts";
-import { chain, reject, sortBy } from "lodash";
+  YAxis
+} from 'recharts'
+import { chain } from 'lodash'
 
-const LogChart = ({ data, title }) => {
-  const mockData = [
-    {
-      date: "11/3/2020",
-      deaths: 1,
-    },
-    {
-      date: "12/3/2020",
-      deaths: 1,
-    },
-    {
-      date: "13/3/2020",
-      deaths: 1,
-    },
-    {
-      date: "14/3/2020",
-      deaths: 1,
-    },
-    {
-      date: "15/3/2020",
-      deaths: 1,
-    },
-    {
-      date: "16/3/2020",
-      deaths: 1,
-    },
-    {
-      date: "17/3/2020",
-      deaths: 1,
-    },
-    {
-      date: "18/3/2020",
-      deaths: 2,
-    },
-    {
-      date: "19/3/2020",
-      deaths: 2,
-    },
-    {
-      date: "20/3/2020",
-      deaths: 4,
-    },
-    {
-      date: "21/3/2020",
-      deaths: 4,
-    },
-    {
-      date: "22/3/2020",
-      deaths: 10,
-    },
-    {
-      date: "23/3/2020",
-      deaths: 10,
-    },
-    {
-      date: "24/3/2020",
-      deaths: 13,
-    },
-    {
-      date: "25/3/2020",
-      deaths: 17,
-    },
-    {
-      date: "26/3/2020",
-      deaths: 22,
-    },
-    {
-      date: "27/3/2020",
-      deaths: 26,
-    },
-    {
-      date: "28/3/2020",
-      deaths: 29,
-    },
-    {
-      date: "29/3/2020",
-      deaths: 37,
-    },
-    {
-      date: "30/3/2020",
-      deaths: 42,
-    },
-    {
-      date: "31/3/2020",
-      deaths: 46,
-    },
-    {
-      date: "1/4/2020",
-      deaths: 58,
-    },
-    {
-      date: "2/4/2020",
-      deaths: 69,
-    },
-    {
-      date: "3/4/2020",
-      deaths: 71,
-    },
-    {
-      date: "4/4/2020",
-      deaths: 75,
-    },
-    {
-      date: "5/4/2020",
-      deaths: 81,
-    },
-    {
-      date: "6/4/2020",
-      deaths: 84,
-    },
-    {
-      date: "7/4/2020",
-      deaths: 89,
-    },
-    {
-      date: "8/4/2020",
-      deaths: 89,
-    },
-    {
-      date: "9/4/2020",
-      deaths: 97,
-    },
-    {
-      date: "10/4/2020",
-      deaths: 102,
-    },
-    {
-      date: "11/4/2020",
-      deaths: 112,
-    },
-    {
-      date: "12/4/2020",
-      deaths: 117,
-    },
-    {
-      date: "13/4/2020",
-      deaths: 118,
-    },
-    {
-      date: "14/4/2020",
-      deaths: 125,
-    },
-    {
-      date: "15/4/2020",
-      deaths: 131,
-    },
-    {
-      date: "16/4/2020",
-      deaths: 134,
-    },
-  ];
+import Colors from '../constants/Colors'
+import displayDate from '../util/displayDate'
 
-  // const deaths = chain(data).reject({ exitus: 0 }).sortBy("data").value();
-  // debugger;
+const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
+  const deaths = chain(data)
+    .reject({ [yKey]: 0 })
+    .sortBy('data')
+    .value()
   return (
     <section>
       <h2>{title}</h2>
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer width="100%" height={300}>
         <LineChart
-          data={mockData}
-          margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
-        >
-          <ReferenceLine x="14/3/2020" stroke="red" label="Estat d'alarma" />
+          data={deaths}
+          margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+          <defs>
+            <linearGradient id="colorAlm" x1="0" y1="0" x2="1" y2="0">
+              <stop
+                offset="5%"
+                stopColor={Colors.alarmYellow}
+                stopOpacity={0.6}
+              />
+              <stop
+                offset="95%"
+                stopColor={Colors.alarmYellow}
+                stopOpacity={0}
+              />
+            </linearGradient>
+            <linearGradient id="colorConf" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="5%" stopColor={Colors.alarmRed} stopOpacity={0.6} />
+              <stop offset="95%" stopColor={Colors.alarmRed} stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          {displayAlarm && (
+            <ReferenceLine
+              x="2020-03-14T00:00:00.000Z"
+              stroke={Colors.alarmYellow}
+              label={{
+                value: "Estat d'alarma",
+                fontSize: 12,
+                offset: 10,
+                position: 'insideTopLeft'
+              }}
+            />
+          )}
+          {displayAlarm && (
+            <ReferenceArea
+              x1="2020-03-14T00:00:00.000Z"
+              x2="2020-03-27T00:00:00.000Z"
+              fill="url(#colorAlm)"
+              fillOpacity={0.4}
+              strokeOpacity={0.3}
+            />
+          )}
+          {displayAlarm && (
+            <ReferenceLine
+              x="2020-03-28T00:00:00.000Z"
+              stroke={Colors.alarmRed}
+              label={{
+                value: 'Aturada activitats',
+                fontSize: 12,
+                offset: 10,
+                position: 'insideTopLeft'
+              }}
+            />
+          )}
+          {displayAlarm && (
+            <ReferenceArea
+              x1="2020-03-28T00:00:00.000Z"
+              x2="2020-04-12T00:00:00.000Z"
+              fill="url(#colorConf)"
+              fillOpacity={0.4}
+              strokeOpacity={0.3}
+            />
+          )}
           <Line
             type="monotone"
-            dataKey="deaths"
+            dataKey={yKey}
             dot={false}
             stroke="#8884d8"
             strokeWidth={3}
           />
-          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-          <XAxis dataKey="date" />
+          <XAxis dataKey={xKey} tickFormatter={displayDate} />
           <YAxis
             scale="log"
-            ticks={[10, 100, 1000]}
-            domain={["dataMin", 1000]}
+            ticks={[10, 100, 1000, 10000]}
+            domain={['dataMin', 'dataMax']}
             allowDataOverflow
           />
         </LineChart>
       </ResponsiveContainer>
     </section>
-  );
-};
+  )
+}
 
-export default LogChart;
+export default LogChart
