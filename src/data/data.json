@@ -793,5 +793,30 @@
     "ibiza_professionals_en_vig": 12,
     "ibiza_uvac": 24,
     "proves_laboratori": 23506
+  },
+  {
+    "percentatge_increment": 4.7,
+    "data": "2020-04-17T00:00:00.000Z",
+    "nous_positius": 80,
+    "positius_acumulats": 1748,
+    "curats": 958,
+    "exitus": 148,
+    "positius_actius": 642,
+    "hospitalitzats": 389,
+    "uci": 75,
+    "professionals_positius": 143,
+    "mallorca_hospitalizats": 338,
+    "mallorca_professionals_positius": 139,
+    "mallorca_professionals_en_vig": 226,
+    "mallorca_uvac": 581,
+    "menorca_hospitalizats": 10,
+    "menorca_professionals_positius": 1,
+    "menorca_professionals_en_vig": 3,
+    "menorca_uvac": 18,
+    "ibiza_hospitalizats": 41,
+    "ibiza_professionals_positius": 3,
+    "ibiza_professionals_en_vig": 14,
+    "ibiza_uvac": 25,
+    "proves_laboratori": 24333
   }
 ]
