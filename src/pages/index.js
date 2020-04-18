@@ -1,7 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Styled } from 'theme-ui'
-import moment from 'moment'
 import 'moment/locale/ca'
 import 'moment/locale/es'
 import last from 'lodash/last'
@@ -54,28 +53,9 @@ export default () => {
   const currentNode = last(nodes)
   let prevDayNode = nodes[nodes.length - 2]
 
-  const formatAndTranslateCurrentDate = (date) => {
-    let currentDate = moment(date, 'YYYY-MM-DD').format('DD MMMM YYYY')
-    currentDate = currentDate.replace('January', 'Gener')
-    currentDate = currentDate.replace('February', 'Febrer')
-    currentDate = currentDate.replace('March', 'Març')
-    currentDate = currentDate.replace('April', 'Abril')
-    currentDate = currentDate.replace('May', 'Maig')
-    currentDate = currentDate.replace('June', 'Juny')
-    currentDate = currentDate.replace('July', 'Juliol')
-    currentDate = currentDate.replace('August', 'Agost')
-    currentDate = currentDate.replace('September', 'Setembre')
-    currentDate = currentDate.replace('October', 'Octubre')
-    currentDate = currentDate.replace('November', 'Novembre')
-    currentDate = currentDate.replace('December', 'Desembre')
-    return currentDate.toLowerCase()
-  }
-
   return (
     <Styled.root>
-      <Header
-        lastUpdatedTime={formatAndTranslateCurrentDate(currentNode.data)}
-      />
+      <Header />
       <main>
         <div className="container">
           <Overview currentNode={currentNode} prevDayNode={prevDayNode} />
