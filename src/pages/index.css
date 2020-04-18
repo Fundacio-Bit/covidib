@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  max-width: 1800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -36,7 +36,6 @@ section#overview ul {
   padding: 0;
   list-style: none;
   align-items: flex-start;
-
 }
 
 section#overview ul li {

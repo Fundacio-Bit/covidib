@@ -27,6 +27,7 @@
     "gatsby-plugin-theme-ui": "^0.2.43",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-json": "^2.2.15",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -38,5 +39,8 @@
     "gatsby": "^2.16.4",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^5.2.1"
   }
 }
