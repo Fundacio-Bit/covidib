@@ -10,7 +10,13 @@ const resources = {
       menorca: 'Menorca',
       pitiuses: 'Ibiza y Formentera',
       casos_nous_title: 'Casos nuevos',
-      percentatge_increment_title: '% incremento de casos'
+      percentatge_increment_title: '% incremento de casos',
+      log_deaths_title: 'Defunciones (logarítmica)',
+      log_cases_title: 'Positivos (logarítmica)',
+      positius_actius: 'Positivos activos',
+      curats: 'Curados',
+      nous_positius: 'Nuevos positivos',
+      percentatge_increment: '% incremento'
     }
   },
   ca: {
@@ -21,7 +27,13 @@ const resources = {
       menorca: 'Menorca',
       pitiuses: 'Eivissa i Formentera',
       casos_nous_title: 'Nous casos',
-      percentatge_increment_title: '% increment de casos'
+      percentatge_increment_title: '% increment de casos',
+      log_deaths_title: 'Exitus (logarítmic)',
+      log_cases_title: 'Positius (logarítmica)',
+      positius_actius: 'Positius actius',
+      curats: 'Curats',
+      nous_positius: 'Nous positius',
+      percentatge_increment: '% increment'
     }
   }
 }

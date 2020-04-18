@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import { useTranslation } from 'react-i18next'
 
 import LogChart from '../components/LogChart'
 
@@ -20,10 +21,11 @@ const LogCases = () => {
       }
     }
   `)
+  const { t } = useTranslation()
   return (
     <LogChart
       data={data.allDataJson.nodes}
-      title="POSITIUS PER COVID-19 (logarítmic)"
+      title={t('log_cases_title')}
       yKey="positius_acumulats"
       xKey="data"
       displayAlarm
