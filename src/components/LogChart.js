@@ -89,7 +89,7 @@ const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
             type="monotone"
             dataKey={yKey}
             dot={false}
-            stroke="#8884d8"
+            stroke={Colors.purple}
             strokeWidth={3}
           />
           <XAxis dataKey={xKey} tickFormatter={displayDate} />
