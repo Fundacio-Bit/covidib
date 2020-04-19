@@ -10,7 +10,9 @@ const Overview = ({ currentNode }) => {
         <li>
           {currentNode.nous_positius}
           <p>{t('nous_positius')}</p>
-          <p>({currentNode.percentatge_increment} %)</p>
+        </li>
+        <li>
+          {currentNode.percentatge_increment}%<p>{t('percentatge_increment')}</p>
         </li>
         <li>
           {currentNode.curats}
@@ -24,12 +26,12 @@ const Overview = ({ currentNode }) => {
           {currentNode.positius_actius}
           <p>{t('positius_actius')}</p>
         </li>
+      </ul>
+      <ul>
         <li>
           {currentNode.positius_acumulats}
           <p>{t('positius_acumulats')}</p>
         </li>
-      </ul>
-      <ul>
         <li>
           {currentNode.hospitalitzats}
           <p>{t('hospitalitzats')}</p>
