@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next'
 
 import LogDeaths from '../charts/LogDeaths'
 import LogCases from '../charts/LogCases'
+import StackedCases from '../charts/StackedCases'
 
 import StatChart from '../components/StatChart'
 import StatChartComparison from '../components/StatChartComparison'
@@ -82,6 +83,7 @@ const Index = () => {
             color={Colors.purple}
             color2={Colors.green}
           />
+          <StackedCases title={t('actius_curats_title')} />
           <IslandsOverview
             islands={t('mallorca')}
             hospitalized={currentNode.mallorca_hospitalizats}

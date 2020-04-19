@@ -5,6 +5,7 @@
     "positius_acumulats": 1,
     "nous_positius": 1,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -15,6 +16,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -25,6 +27,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -35,6 +38,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -45,6 +49,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 0,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -55,6 +60,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 0,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -65,6 +71,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 0,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -85,6 +92,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 0,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -95,6 +103,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 0,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -105,6 +114,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 0,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -115,6 +125,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -125,6 +136,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -135,6 +147,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -145,6 +158,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -155,6 +169,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -165,6 +180,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -175,6 +191,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -185,6 +202,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -195,6 +213,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -205,6 +224,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -215,6 +235,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -225,6 +246,7 @@
     "positius_acumulats": 1,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 1,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -235,6 +257,7 @@
     "positius_acumulats": 2,
     "nous_positius": 1,
     "hospitalitzats": 0,
+    "positius_actius": 2,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -245,6 +268,7 @@
     "positius_acumulats": 2,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 2,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -255,6 +279,7 @@
     "positius_acumulats": 3,
     "nous_positius": 1,
     "hospitalitzats": 0,
+    "positius_actius": 3,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -265,6 +290,7 @@
     "positius_acumulats": 5,
     "nous_positius": 2,
     "hospitalitzats": 0,
+    "positius_actius": 5,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -275,6 +301,7 @@
     "positius_acumulats": 6,
     "nous_positius": 1,
     "hospitalitzats": 0,
+    "positius_actius": 6,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -285,6 +312,7 @@
     "positius_acumulats": 7,
     "nous_positius": 1,
     "hospitalitzats": 0,
+    "positius_actius": 7,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -295,6 +323,7 @@
     "positius_acumulats": 7,
     "nous_positius": 0,
     "hospitalitzats": 0,
+    "positius_actius": 7,
     "uci": 0,
     "exitus": 0,
     "curats": 0
@@ -305,6 +334,7 @@
     "positius_acumulats": 8,
     "nous_positius": 1,
     "hospitalitzats": 0,
+    "positius_actius": 6,
     "uci": 1,
     "exitus": 0,
     "curats": 2
@@ -315,6 +345,7 @@
     "positius_acumulats": 11,
     "nous_positius": 3,
     "hospitalitzats": 0,
+    "positius_actius": 8,
     "uci": 1,
     "exitus": 0,
     "curats": 3
@@ -325,6 +356,7 @@
     "positius_acumulats": 13,
     "nous_positius": 2,
     "hospitalitzats": 8,
+    "positius_actius": 12,
     "uci": 1,
     "exitus": 0,
     "curats": 1
@@ -335,6 +367,7 @@
     "positius_acumulats": 16,
     "nous_positius": 3,
     "hospitalitzats": 8,
+    "positius_actius": 14,
     "uci": 2,
     "exitus": 1,
     "curats": 1
@@ -345,6 +378,7 @@
     "positius_acumulats": 21,
     "nous_positius": 5,
     "hospitalitzats": 9,
+    "positius_actius": 19,
     "uci": 2,
     "exitus": 1,
     "curats": 1
@@ -355,6 +389,7 @@
     "positius_acumulats": 26,
     "nous_positius": 5,
     "hospitalitzats": 9,
+    "positius_actius": 24,
     "uci": 2,
     "exitus": 1,
     "curats": 1
@@ -365,6 +400,7 @@
     "positius_acumulats": 44,
     "nous_positius": 18,
     "hospitalitzats": 9,
+    "positius_actius": 42,
     "uci": 2,
     "exitus": 1,
     "curats": 1
@@ -385,6 +421,7 @@
     "positius_acumulats": 73,
     "nous_positius": 18,
     "hospitalitzats": 26,
+    "positius_actius": 71,
     "uci": 4,
     "exitus": 1,
     "curats": 1
@@ -395,6 +432,7 @@
     "positius_acumulats": 92,
     "nous_positius": 19,
     "hospitalitzats": 29,
+    "positius_actius": 87,
     "uci": 4,
     "exitus": 1,
     "curats": 4
@@ -405,6 +443,7 @@
     "positius_acumulats": 112,
     "nous_positius": 20,
     "hospitalitzats": 31,
+    "positius_actius": 104,
     "uci": 7,
     "exitus": 2,
     "curats": 6
@@ -415,6 +454,7 @@
     "positius_acumulats": 169,
     "nous_positius": 57,
     "hospitalitzats": 31,
+    "positius_actius": 161,
     "uci": 7,
     "exitus": 2,
     "curats": 6
@@ -426,6 +466,7 @@
     "positius_acumulats": 203,
     "nous_positius": 34,
     "hospitalitzats": 48,
+    "positius_actius": 191,
     "uci": 10,
     "exitus": 2,
     "curats": 10
@@ -436,6 +477,7 @@
     "positius_acumulats": 246,
     "nous_positius": 43,
     "hospitalitzats": 60,
+    "positius_actius": 231,
     "uci": 14,
     "exitus": 4,
     "curats": 11
@@ -446,6 +488,7 @@
     "positius_acumulats": 331,
     "nous_positius": 85,
     "hospitalitzats": 79,
+    "positius_actius": 310,
     "uci": 14,
     "exitus": 4,
     "curats": 17
@@ -456,6 +499,7 @@
     "positius_acumulats": 400,
     "nous_positius": 69,
     "hospitalitzats": 87,
+    "positius_actius": 372,
     "uci": 27,
     "exitus": 10,
     "curats": 18
@@ -466,6 +510,7 @@
     "positius_acumulats": 478,
     "nous_positius": 78,
     "hospitalitzats": 127,
+    "positius_actius": 449,
     "uci": 35,
     "exitus": 10,
     "curats": 19
@@ -476,6 +521,7 @@
     "positius_acumulats": 562,
     "nous_positius": 84,
     "hospitalitzats": 164,
+    "positius_actius": 521,
     "uci": 40,
     "exitus": 13,
     "curats": 28
@@ -486,6 +532,7 @@
     "positius_acumulats": 660,
     "nous_positius": 98,
     "hospitalitzats": 205,
+    "positius_actius": 604,
     "uci": 43,
     "exitus": 17,
     "curats": 39
@@ -496,6 +543,7 @@
     "positius_acumulats": 755,
     "hospitalitzats": 237,
     "nous_positius": 95,
+    "positius_actius": 666,
     "uci": 46,
     "exitus": 22,
     "curats": 67
@@ -1029,5 +1077,30 @@
     "ibiza_professionals_en_vig": 14,
     "ibiza_uvac": 25,
     "proves_laboratori": 24333
+  },
+  {
+    "percentatge_increment": 1.4,
+    "data": "2020-04-18T00:00:00.000Z",
+    "nous_positius": 25,
+    "positius_acumulats": 1773,
+    "curats": 993,
+    "exitus": 155,
+    "positius_actius": 625,
+    "hospitalitzats": 406,
+    "uci": 76,
+    "professionals_positius": 142,
+    "mallorca_hospitalizats": 354,
+    "mallorca_professionals_positius": 138,
+    "mallorca_professionals_en_vig": 220,
+    "mallorca_uvac": 571,
+    "menorca_hospitalizats": 10,
+    "menorca_professionals_positius": 1,
+    "menorca_professionals_en_vig": 5,
+    "menorca_uvac": 14,
+    "ibiza_hospitalizats": 41,
+    "ibiza_professionals_positius": 3,
+    "ibiza_professionals_en_vig": 14,
+    "ibiza_uvac": 25,
+    "proves_laboratori": 25089
   }
 ]

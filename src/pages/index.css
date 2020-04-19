@@ -26,6 +26,10 @@ section:last-child {
   text-align: center;
 }
 
+section#fullchart {
+  grid-column: 1 / span 2;
+}
+
 section#overview {
   grid-column: 1 / span 2;
 }
