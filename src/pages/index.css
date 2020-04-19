@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  max-width: 1800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -26,6 +26,10 @@ section:last-child {
   text-align: center;
 }
 
+section#fullchart {
+  grid-column: 1 / span 2;
+}
+
 section#overview {
   grid-column: 1 / span 2;
 }
@@ -35,6 +39,7 @@ section#overview ul {
   justify-content: space-between;
   padding: 0;
   list-style: none;
+  align-items: flex-start;
 }
 
 section#overview ul li {

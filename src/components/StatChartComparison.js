@@ -14,7 +14,15 @@ import { useTranslation } from 'react-i18next'
 
 import displayDate from '../util/displayDate'
 
-const StatChart = ({ title, data, yKey, xKey, color, isPercentageChart }) => {
+const StatChartComparison = ({
+  title,
+  data,
+  yKey,
+  xKey,
+  color,
+  y2Key,
+  color2
+}) => {
   const { t } = useTranslation()
   const filteredData = chain(data)
     .reject({ [yKey]: null })
@@ -25,6 +33,7 @@ const StatChart = ({ title, data, yKey, xKey, color, isPercentageChart }) => {
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={filteredData} margin={{ top: 15 }}>
+          <CartesianGrid strokeDasharray="3 3" verticalPoints={15} />
           <Tooltip
             labelFormatter={displayDate}
             formatter={(v, n) => [v, t(n)]}
@@ -38,16 +47,20 @@ const StatChart = ({ title, data, yKey, xKey, color, isPercentageChart }) => {
             dot={false}
             isAnimationActive={false}
           />
-          <XAxis dataKey={xKey} tickFormatter={displayDate} />
-          <YAxis
-            interval={0}
-            domain={isPercentageChart ? [0, 100] : ['dataMin', 'dataMax']}
+          <Line
+            type="monotone"
+            dataKey={y2Key}
+            stroke={color2}
+            strokeWidth={3}
+            dot={false}
+            isAnimationActive={false}
           />
-          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+          <XAxis dataKey={xKey} tickFormatter={displayDate} />
+          <YAxis interval={0} />
         </LineChart>
       </ResponsiveContainer>
     </section>
   )
 }
 
-export default StatChart
+export default StatChartComparison

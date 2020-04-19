@@ -1,76 +1,56 @@
-import React from "react"
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
-/**
- *
- * @param {number} current - Current Value
- * @param {number} prev - previous value
- * @param {string} direction - direction which should be positive ("up" or "down")
- */
-const dayDiff = (current, prev, direction) => {
-  let diff = current - prev
-  if ((direction === "up" && diff > 0) || (direction === "down" && diff < 0)) {
-    return (
-      <p style={{ color: "green" }}>
-        ({diff >= 0 ? "+" : ""}
-        {diff} %)
-      </p>
-    )
-  } else {
-    return (
-      <p style={{ color: "rgb(203, 36, 49)" }}>
-        ({diff >= 0 ? "+" : ""}
-        {diff} %)
-      </p>
-    )
-  }
+const Overview = ({ currentNode }) => {
+  const { t } = useTranslation()
+  return (
+    <section id="overview">
+      <h2>{t('situ_actual')}</h2>
+      <ul>
+        <li>
+          {currentNode.nous_positius}
+          <p>{t('nous_positius')}</p>
+        </li>
+        <li>
+          {currentNode.percentatge_increment}%<p>{t('percentatge_increment')}</p>
+        </li>
+        <li>
+          {currentNode.curats}
+          <p>{t('curats')}</p>
+        </li>
+        <li>
+          {currentNode.exitus}
+          <p>{t('exitus')}</p>
+        </li>
+        <li>
+          {currentNode.positius_actius}
+          <p>{t('positius_actius')}</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          {currentNode.positius_acumulats}
+          <p>{t('positius_acumulats')}</p>
+        </li>
+        <li>
+          {currentNode.hospitalitzats}
+          <p>{t('hospitalitzats')}</p>
+        </li>
+        <li>
+          {currentNode.uci}
+          <p>UCI</p>
+        </li>
+        <li>
+          {currentNode.professionals_positius}
+          <p>{t('professionals_positius')}</p>
+        </li>
+        <li>
+          {currentNode.proves_laboratori}
+          <p>{t('proves_laboratori')}</p>
+        </li>
+      </ul>
+    </section>
+  )
 }
-
-const Overview = ({ currentNode, prevDayNode }) => (
-  <section id="overview">
-    <h2>SITUACIÓ ACTUAL A LES ILLES BALEARS</h2>
-    <ul>
-      <li>
-        16
-        <p>Nous positius</p>
-        {prevDayNode &&
-          dayDiff(2, 1, "up")}
-      </li>
-      <li>
-        862
-        <p>Curats</p>
-        {/* {prevDayNode &&
-          dayDiff(currentNode.closedIssues, prevDayNode.closedIssues, "up")} */}
-      </li>
-      <li>
-        117
-        <p>Exitus</p>
-        {/* {prevDayNode &&
-          dayDiff(currentNode.openPRs, prevDayNode.openPRs, "down")} */}
-      </li>
-      <li>
-        571
-        <p>Positius actius</p>
-        {/* {prevDayNode &&
-          dayDiff(currentNode.mergedPRs, prevDayNode.mergedPRs, "up")} */}
-      </li>
-      <li>
-        1550
-        <p>Positius acumulats</p>
-        {/* {prevDayNode &&
-          dayDiff(currentNode.closedPRs, prevDayNode.closedPRs, "up")} */}
-      </li>
-      <li>
-        452
-        <p>Hospitalitzats</p>
-        {/* {prevDayNode && dayDiff(currentNode.stars, prevDayNode.stars, "up")} */}
-      </li>
-      <li>
-        88
-        <p>UCI</p>
-        {/* {prevDayNode && dayDiff(currentNode.stars, prevDayNode.stars, "up")} */}
-      </li>
-    </ul>
-  </section>
-)
 
 export default Overview
