@@ -33,7 +33,7 @@ const StatChartComparison = ({
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={filteredData} margin={{ top: 15 }}>
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="3 3" verticalPoints={15} />
           <Tooltip
             labelFormatter={displayDate}
             formatter={(v, n) => [v, t(n)]}
