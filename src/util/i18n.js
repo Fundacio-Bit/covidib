@@ -16,7 +16,18 @@ const resources = {
       positius_actius: 'Positivos activos',
       curats: 'Curados',
       nous_positius: 'Nuevos positivos',
-      percentatge_increment: '% incremento'
+      percentatge_increment: '% incremento',
+      casos: 'Casos',
+      hospitalitzats: 'Hospitalizados',
+      professionals_positius: 'Profesionales positivos',
+      professionals_vigilancia: 'Profesionales en vigilancia',
+      situ_actual: 'Situación actual en las Islas Baleares',
+      positius_acumulats: 'Positivos acumulados',
+      exitus: 'Fallecimientos',
+      darrera_act: 'Última actualización',
+      proves_laboratori: 'Pruebas laboratorio',
+      estat_alarma: 'Estado de alarma',
+      confinament: 'Parón actividad'
     }
   },
   ca: {
@@ -33,7 +44,18 @@ const resources = {
       positius_actius: 'Positius actius',
       curats: 'Curats',
       nous_positius: 'Nous positius',
-      percentatge_increment: '% increment'
+      percentatge_increment: '% increment',
+      casos: 'Casos',
+      hospitalitzats: 'Hospitalitzats',
+      professionals_positius: 'Professionals positius',
+      professionals_vigilancia: 'Professionals en vigilància',
+      situ_actual: 'Situació actual a les Illes Balears',
+      positius_acumulats: 'Positius acumulats',
+      exitus: 'Exitus',
+      darrera_act: 'Darrera actualització',
+      proves_laboratori: 'Proves laboratori',
+      estat_alarma: "Estat d'alarma",
+      confinament: "Aturada d'activitats"
     }
   }
 }

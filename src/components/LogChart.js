@@ -8,11 +8,13 @@ import {
   XAxis,
   YAxis
 } from 'recharts'
+import { useTranslation } from 'react-i18next'
 
 import Colors from '../constants/Colors'
 import displayDate from '../util/displayDate'
 
 const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
+  const { t } = useTranslation()
   return (
     <section>
       <h2>{title}</h2>
@@ -43,7 +45,7 @@ const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
               x="2020-03-14T00:00:00.000Z"
               stroke={Colors.alarmYellow}
               label={{
-                value: "Estat d'alarma",
+                value: t('estat_alarma'),
                 fontSize: 12,
                 offset: 10,
                 position: 'insideTopLeft'
@@ -64,7 +66,7 @@ const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
               x="2020-03-28T00:00:00.000Z"
               stroke={Colors.alarmRed}
               label={{
-                value: 'Aturada activitats',
+                value: t('confinament'),
                 fontSize: 12,
                 offset: 10,
                 position: 'insideTopLeft'
