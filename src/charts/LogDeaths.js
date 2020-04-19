@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import { useTranslation } from 'react-i18next'
 
 import LogChart from '../components/LogChart'
 
@@ -17,10 +18,11 @@ const LogDeaths = () => {
       }
     }
   `)
+  const { t } = useTranslation()
   return (
     <LogChart
       data={data.allDataJson.nodes}
-      title="EXITUS (logarítmic)"
+      title={t('log_deaths_title')}
       yKey="exitus"
       xKey="data"
     />

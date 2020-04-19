@@ -10,10 +10,12 @@ import {
   ResponsiveContainer
 } from 'recharts'
 import { chain } from 'lodash'
+import { useTranslation } from 'react-i18next'
 
 import displayDate from '../util/displayDate'
 
 const StatChart = ({ title, data, yKey, xKey, color, isPercentageChart }) => {
+  const { t } = useTranslation()
   const filteredData = chain(data)
     .reject({ [yKey]: null })
     .sortBy('data')
@@ -23,8 +25,11 @@ const StatChart = ({ title, data, yKey, xKey, color, isPercentageChart }) => {
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={filteredData} margin={{ top: 15 }}>
-          <Tooltip labelFormatter={displayDate} />
-          <Legend />
+          <Tooltip
+            labelFormatter={displayDate}
+            formatter={(v, n) => [v, t(n)]}
+          />
+          <Legend formatter={t} />
           <Line
             type="monotone"
             dataKey={yKey}
