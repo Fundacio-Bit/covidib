@@ -82,6 +82,21 @@ const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
               strokeOpacity={0.3}
             />
           )}
+          {displayAlarm && (
+            <ReferenceLine
+              x="2020-04-13T00:00:00.000Z"
+              stroke={Colors.alarmYellow}
+            />
+          )}
+          {displayAlarm && (
+            <ReferenceArea
+              x1="2020-04-13T00:00:00.000Z"
+              x2="2020-04-18T00:00:00.000Z"
+              fill="url(#colorAlm)"
+              fillOpacity={0.4}
+              strokeOpacity={0.3}
+            />
+          )}
           <Line
             type="monotone"
             dataKey={yKey}
