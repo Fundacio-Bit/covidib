@@ -31,7 +31,7 @@ const StackedCases = ({ title }) => {
   `)
   const { t } = useTranslation()
   return (
-    <section id="overview">
+    <section id="fullchart">
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <BarChart
