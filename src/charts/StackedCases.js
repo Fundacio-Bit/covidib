@@ -2,16 +2,19 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import {
   BarChart,
-  CartesianGrid,
   Tooltip,
   Legend,
   Bar,
   XAxis,
-  YAxis
+  YAxis,
+  ResponsiveContainer
 } from 'recharts'
 import { useTranslation } from 'react-i18next'
 
-const StackedCases = () => {
+import Colors from '../constants/Colors'
+import displayDate from '../util/displayDate'
+
+const StackedCases = ({ title }) => {
   const data = useStaticQuery(graphql`
     {
       allDataJson(
@@ -26,25 +29,31 @@ const StackedCases = () => {
       }
     }
   `)
+  const { t } = useTranslation()
   return (
-    <BarChart
-      width={500}
-      height={300}
-      data={data.allDataJson.nodes}
-      margin={{
-        top: 20,
-        right: 30,
-        left: 20,
-        bottom: 5
-      }}>
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="positius_actius" stackId="a" fill="#82ca9d" />
-      <Bar dataKey="curats" stackId="a" fill="#8884d8" />
-    </BarChart>
+    <section id="overview">
+      <h2>{title}</h2>
+      <ResponsiveContainer width="100%" height={400}>
+        <BarChart
+          data={data.allDataJson.nodes}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5
+          }}>
+          <XAxis dataKey="data" tickFormatter={displayDate} />
+          <YAxis />
+          <Tooltip
+            labelFormatter={displayDate}
+            formatter={(v, n) => [v, t(n)]}
+          />
+          <Legend formatter={t} />
+          <Bar dataKey="positius_actius" stackId="a" fill={Colors.red} />
+          <Bar dataKey="curats" stackId="a" fill={Colors.green} />
+        </BarChart>
+      </ResponsiveContainer>
+    </section>
   )
 }
 

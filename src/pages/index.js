@@ -83,7 +83,7 @@ const Index = () => {
             color={Colors.purple}
             color2={Colors.green}
           />
-          <StackedCases />
+          <StackedCases title={t('actius_curats_title')} />
           <IslandsOverview
             islands={t('mallorca')}
             hospitalized={currentNode.mallorca_hospitalizats}
