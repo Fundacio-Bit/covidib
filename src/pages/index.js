@@ -1,27 +1,26 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { Styled } from "theme-ui";
-import "moment/locale/ca";
-import "moment/locale/es";
-import last from "lodash/last";
-import "../util/i18n";
-import { useTranslation } from "react-i18next";
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import { Styled } from 'theme-ui'
+import 'moment/locale/ca'
+import 'moment/locale/es'
+import last from 'lodash/last'
+import '../util/i18n'
+import { useTranslation } from 'react-i18next'
 
-import Map from "../charts/map/Map";
-import Map2 from "../charts/map/Map2";
-import LogDeaths from "../charts/LogDeaths";
-import LogCases from "../charts/LogCases";
-import StackedCases from "../charts/StackedCases";
+import TooltipMap from '../charts/map/TooltipMap'
+import LogDeaths from '../charts/LogDeaths'
+import LogCases from '../charts/LogCases'
+import StackedCases from '../charts/StackedCases'
 
-import StatChart from "../components/StatChart";
-import StatChartComparison from "../components/StatChartComparison";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Overview from "../components/Overview";
-import IslandsOverview from "../components/IslandsOverview";
-import Colors from "../constants/Colors";
+import StatChart from '../components/StatChart'
+import StatChartComparison from '../components/StatChartComparison'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Overview from '../components/Overview'
+import IslandsOverview from '../components/IslandsOverview'
+import Colors from '../constants/Colors'
 
-import "./index.css";
+import './index.css'
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -57,14 +56,14 @@ const Index = () => {
         }
       }
     }
-  `);
+  `)
 
-  let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
+  let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
 
-  const currentNode = last(nodes);
-  let prevDayNode = nodes[nodes.length - 2];
+  const currentNode = last(nodes)
+  let prevDayNode = nodes[nodes.length - 2]
 
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <Styled.root>
@@ -72,16 +71,16 @@ const Index = () => {
       <main>
         <div className="container">
           <Overview currentNode={currentNode} prevDayNode={prevDayNode} />
-          <Map />
+          <TooltipMap />
           <StatChart
-            title={t("curats_title")}
+            title={t('curats_title')}
             data={nodes}
             yKey="curats"
             xKey="data"
             color={Colors.green}
           />
           <StatChartComparison
-            title={t("actius_curats_title")}
+            title={t('actius_curats_title')}
             data={nodes}
             yKey="positius_actius"
             y2Key="curats"
@@ -89,9 +88,9 @@ const Index = () => {
             color={Colors.purple}
             color2={Colors.green}
           />
-          <StackedCases title={t("actius_curats_title")} />
+          <StackedCases title={t('actius_curats_title')} />
           <IslandsOverview
-            islands={t("mallorca")}
+            islands={t('mallorca')}
             hospitalized={currentNode.mallorca_hospitalizats}
             uci={currentNode.mallorca_uci}
             positiveProfs={currentNode.mallorca_professionals_positius}
@@ -99,7 +98,7 @@ const Index = () => {
             uvac={currentNode.mallorca_uvac}
           />
           <IslandsOverview
-            islands={t("menorca")}
+            islands={t('menorca')}
             hospitalized={currentNode.menorca_hospitalizats}
             uci={currentNode.menorca_uci}
             positiveProfs={currentNode.menorca_professionals_positius}
@@ -107,7 +106,7 @@ const Index = () => {
             uvac={currentNode.menorca_uvac}
           />
           <IslandsOverview
-            islands={t("pitiuses")}
+            islands={t('pitiuses')}
             hospitalized={currentNode.ibiza_hospitalizats}
             uci={currentNode.ibiza_uci}
             positiveProfs={currentNode.ibiza_professionals_positius}
@@ -117,7 +116,7 @@ const Index = () => {
           <LogDeaths />
           <LogCases />
           <StatChart
-            title={t("casos_nous_title")}
+            title={t('casos_nous_title')}
             data={nodes}
             yKey="nous_positius"
             xKey="data"
@@ -125,7 +124,7 @@ const Index = () => {
           />
           <StatChart
             isPercentageChart
-            title={t("percentatge_increment_title")}
+            title={t('percentatge_increment_title')}
             data={nodes}
             yKey="percentatge_increment"
             xKey="data"
@@ -135,7 +134,7 @@ const Index = () => {
         </div>
       </main>
     </Styled.root>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
