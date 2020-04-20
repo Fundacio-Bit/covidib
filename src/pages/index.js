@@ -7,6 +7,7 @@ import last from 'lodash/last'
 import '../util/i18n'
 import { useTranslation } from 'react-i18next'
 
+import TooltipMap from '../charts/map/TooltipMap'
 import LogDeaths from '../charts/LogDeaths'
 import LogCases from '../charts/LogCases'
 import StackedCases from '../charts/StackedCases'
@@ -37,14 +38,17 @@ const Index = () => {
           uci
           professionals_positius
           mallorca_hospitalizats
+          mallorca_uci
           mallorca_professionals_positius
           mallorca_professionals_en_vig
           mallorca_uvac
           menorca_hospitalizats
+          menorca_uci
           menorca_professionals_positius
           menorca_professionals_en_vig
           menorca_uvac
           ibiza_hospitalizats
+          ibiza_uci
           ibiza_professionals_positius
           ibiza_professionals_en_vig
           ibiza_uvac
@@ -67,6 +71,7 @@ const Index = () => {
       <main>
         <div className="container">
           <Overview currentNode={currentNode} prevDayNode={prevDayNode} />
+          <TooltipMap />
           <StatChart
             title={t('curats_title')}
             data={nodes}
@@ -87,7 +92,7 @@ const Index = () => {
           <IslandsOverview
             islands={t('mallorca')}
             hospitalized={currentNode.mallorca_hospitalizats}
-            uci="?"
+            uci={currentNode.mallorca_uci}
             positiveProfs={currentNode.mallorca_professionals_positius}
             watchedProfs={currentNode.mallorca_professionals_en_vig}
             uvac={currentNode.mallorca_uvac}
@@ -95,7 +100,7 @@ const Index = () => {
           <IslandsOverview
             islands={t('menorca')}
             hospitalized={currentNode.menorca_hospitalizats}
-            uci="?"
+            uci={currentNode.menorca_uci}
             positiveProfs={currentNode.menorca_professionals_positius}
             watchedProfs={currentNode.menorca_professionals_en_vig}
             uvac={currentNode.menorca_uvac}
@@ -103,7 +108,7 @@ const Index = () => {
           <IslandsOverview
             islands={t('pitiuses')}
             hospitalized={currentNode.ibiza_hospitalizats}
-            uci="?"
+            uci={currentNode.ibiza_uci}
             positiveProfs={currentNode.ibiza_professionals_positius}
             watchedProfs={currentNode.ibiza_professionals_en_vig}
             uvac={currentNode.ibiza_uvac}

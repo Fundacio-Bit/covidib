@@ -19,7 +19,7 @@ const Overview = ({
       </h2>
       <ul>
         <li>
-          {hospitalized}
+          {hospitalized} ({uci} UCI)
           <p>{t('hospitalitzats')}</p>
         </li>
         <li>

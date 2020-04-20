@@ -1,5 +1,9 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import numbro from 'numbro'
+import languages from 'numbro/dist/languages.min'
+Object.values(languages).forEach((l) => numbro.registerLanguage(l))
+numbro.setLanguage('es-ES')
 
 const resources = {
   es: {
@@ -24,10 +28,14 @@ const resources = {
       situ_actual: 'Situación actual en las Islas Baleares',
       positius_acumulats: 'Positivos acumulados',
       exitus: 'Fallecimientos',
-      darrera_act: 'Última actualización',
+      darrera_act: 'Actualizado',
       proves_laboratori: 'Pruebas laboratorio',
       estat_alarma: 'Estado de alarma',
-      confinament: 'Parón actividad'
+      confinament: 'Parón actividad',
+      per_municipi: 'Datos por municipio',
+      total_casos: 'Total casos',
+      tax_10k: 'Tasa por 10.000 habitantes',
+      poblacio: 'Población'
     }
   },
   ca: {
@@ -52,10 +60,14 @@ const resources = {
       situ_actual: 'Situació actual a les Illes Balears',
       positius_acumulats: 'Positius acumulats',
       exitus: 'Exitus',
-      darrera_act: 'Darrera actualització',
+      darrera_act: 'Actualitzat',
       proves_laboratori: 'Proves laboratori',
       estat_alarma: "Estat d'alarma",
-      confinament: "Aturada d'activitats"
+      confinament: "Aturada d'activitats",
+      per_municipi: 'Dades per municipi',
+      total_casos: 'Total casos',
+      tax_10k: 'Taxa per 10.000 habitants',
+      poblacio: 'Población'
     }
   }
 }

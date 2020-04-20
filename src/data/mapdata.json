@@ -1,0 +1,605 @@
+[
+  {
+    "illa": "Menorca",
+    "zipcode": "07002",
+    "municipis": "Alaior",
+    "poblacio": 9065,
+    "total_casos": 4,
+    "taxa_10000": "4,41",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07001",
+    "municipis": "Alaró",
+    "poblacio": 5572,
+    "total_casos": 8,
+    "taxa_10000": "14,36",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07003",
+    "municipis": "Alcúdia",
+    "poblacio": 20241,
+    "total_casos": 18,
+    "taxa_10000": "8,89",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07004",
+    "municipis": "Algaida",
+    "poblacio": 5642,
+    "total_casos": 8,
+    "taxa_10000": "14,18",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07005",
+    "municipis": "Andratx",
+    "poblacio": 11271,
+    "total_casos": 7,
+    "taxa_10000": "6,21",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07901",
+    "municipis": "Ariany",
+    "poblacio": 868,
+    "total_casos": 2,
+    "taxa_10000": "23,04",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07006",
+    "municipis": "Artà",
+    "poblacio": 7845,
+    "total_casos": 4,
+    "taxa_10000": "5,10",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07007",
+    "municipis": "Banyalbufar",
+    "poblacio": 515,
+    "total_casos": 1,
+    "taxa_10000": "19,42",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07008",
+    "municipis": "Binissalem",
+    "poblacio": 8567,
+    "total_casos": 10,
+    "taxa_10000": "11,67",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07009",
+    "municipis": "Búger",
+    "poblacio": 1050,
+    "total_casos": 2,
+    "taxa_10000": "19,05",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07010",
+    "municipis": "Bunyola",
+    "poblacio": 6809,
+    "total_casos": 11,
+    "taxa_10000": "16,16",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07011",
+    "municipis": "Calvià",
+    "poblacio": 50559,
+    "total_casos": 90,
+    "taxa_10000": "17,80",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07012",
+    "municipis": "Campanet",
+    "poblacio": 2640,
+    "total_casos": 1,
+    "taxa_10000": "3,79",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07013",
+    "municipis": "Campos",
+    "poblacio": 10862,
+    "total_casos": 10,
+    "taxa_10000": "9,21",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07014",
+    "municipis": "Capdepera",
+    "poblacio": 11868,
+    "total_casos": 8,
+    "taxa_10000": "6,74",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Menorca",
+    "zipcode": "07064",
+    "municipis": "Castell, Es",
+    "poblacio": 7434,
+    "total_casos": 4,
+    "taxa_10000": "5,38",
+    "mapping_municipality": "Es Castell"
+  },
+  {
+    "illa": "Menorca",
+    "zipcode": "07015",
+    "municipis": "Ciutadella de Menorca",
+    "poblacio": 29840,
+    "total_casos": 16,
+    "taxa_10000": "5,36",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07016",
+    "municipis": "Consell",
+    "poblacio": 4053,
+    "total_casos": 4,
+    "taxa_10000": "9,87",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07017",
+    "municipis": "Costitx",
+    "poblacio": 1288,
+    "total_casos": 4,
+    "taxa_10000": "31,06",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07018",
+    "municipis": "Deià",
+    "poblacio": 617,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Eivissa",
+    "zipcode": "07026",
+    "municipis": "Eivissa",
+    "poblacio": 49783,
+    "total_casos": 70,
+    "taxa_10000": "14,06",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07019",
+    "municipis": "Escorca",
+    "poblacio": 212,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07020",
+    "municipis": "Esporles",
+    "poblacio": 5062,
+    "total_casos": 4,
+    "taxa_10000": "7,90",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07021",
+    "municipis": "Estellencs",
+    "poblacio": 315,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07022",
+    "municipis": "Felanitx",
+    "poblacio": 17780,
+    "total_casos": 17,
+    "taxa_10000": "9,56",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Menorca",
+    "zipcode": "07023",
+    "municipis": "Ferreries",
+    "poblacio": 4777,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Formentera",
+    "zipcode": "07024",
+    "municipis": "Formentera",
+    "poblacio": 12111,
+    "total_casos": 4,
+    "taxa_10000": "3,30",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07025",
+    "municipis": "Fornalutx",
+    "poblacio": 660,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07027",
+    "municipis": "Inca",
+    "poblacio": 33319,
+    "total_casos": 38,
+    "taxa_10000": "11,40",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07028",
+    "municipis": "Lloret de Vistalegre",
+    "poblacio": 1372,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07029",
+    "municipis": "Lloseta",
+    "poblacio": 5988,
+    "total_casos": 2,
+    "taxa_10000": "3,34",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07030",
+    "municipis": "Llubí",
+    "poblacio": 2273,
+    "total_casos": 3,
+    "taxa_10000": "13,20",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07031",
+    "municipis": "Llucmajor",
+    "poblacio": 36914,
+    "total_casos": 38,
+    "taxa_10000": "10,29",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07033",
+    "municipis": "Manacor",
+    "poblacio": 43808,
+    "total_casos": 50,
+    "taxa_10000": "11,41",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07034",
+    "municipis": "Mancor de la Vall",
+    "poblacio": 1509,
+    "total_casos": 1,
+    "taxa_10000": "6,63",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Menorca",
+    "zipcode": "07032",
+    "municipis": "Maó-Mahón",
+    "poblacio": 29040,
+    "total_casos": 41,
+    "taxa_10000": "14,12",
+    "mapping_municipality": "Mahón"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07035",
+    "municipis": "Maria de la Salut",
+    "poblacio": 2227,
+    "total_casos": 2,
+    "taxa_10000": "8,98",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07036",
+    "municipis": "Marratxí",
+    "poblacio": 37193,
+    "total_casos": 69,
+    "taxa_10000": "18,55",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Menorca",
+    "zipcode": "07037",
+    "municipis": "Mercadal, Es",
+    "poblacio": 5038,
+    "total_casos": 19,
+    "taxa_10000": "37,71",
+    "mapping_municipality": "Es Mercadal"
+  },
+  {
+    "illa": "Menorca",
+    "zipcode": "07902",
+    "municipis": "Migjorn Gran, Es",
+    "poblacio": 1405,
+    "total_casos": 1,
+    "taxa_10000": "7,12",
+    "mapping_municipality": "Es Migjorn Gran"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07038",
+    "municipis": "Montuïri",
+    "poblacio": 2912,
+    "total_casos": 6,
+    "taxa_10000": "20,60",
+    "mapping_municipality": "Montuïri"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07039",
+    "municipis": "Muro",
+    "poblacio": 7085,
+    "total_casos": 6,
+    "taxa_10000": "8,47",
+    "mapping_municipality": "Muro"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07040",
+    "municipis": "Palma",
+    "poblacio": 416065,
+    "total_casos": 1009,
+    "taxa_10000": "24,25",
+    "mapping_municipality": "Palma de Mallorca"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07041",
+    "municipis": "Petra",
+    "poblacio": 2860,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07044",
+    "municipis": "Pobla, Sa",
+    "poblacio": 13475,
+    "total_casos": 9,
+    "taxa_10000": "6,68",
+    "mapping_municipality": "Sa Pobla"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07042",
+    "municipis": "Pollença",
+    "poblacio": 16283,
+    "total_casos": 5,
+    "taxa_10000": "3,07",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07043",
+    "municipis": "Porreres",
+    "poblacio": 5502,
+    "total_casos": 6,
+    "taxa_10000": "10,91",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07045",
+    "municipis": "Puigpunyent",
+    "poblacio": 2012,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07059",
+    "municipis": "Salines, Ses",
+    "poblacio": 4960,
+    "total_casos": 3,
+    "taxa_10000": "6,05",
+    "mapping_municipality": "Ses Salines"
+  },
+  {
+    "illa": "Eivissa",
+    "zipcode": "07046",
+    "municipis": "Sant Antoni de Portmany",
+    "poblacio": 26306,
+    "total_casos": 8,
+    "taxa_10000": "3,04",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07049",
+    "municipis": "Sant Joan",
+    "poblacio": 2108,
+    "total_casos": 8,
+    "taxa_10000": "37,95",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Eivissa",
+    "zipcode": "07050",
+    "municipis": "Sant Joan de Labritja",
+    "poblacio": 6397,
+    "total_casos": 4,
+    "taxa_10000": "6,25",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Eivissa",
+    "zipcode": "07048",
+    "municipis": "Sant Josep de sa Talaia",
+    "poblacio": 27413,
+    "total_casos": 31,
+    "taxa_10000": "11,31",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07051",
+    "municipis": "Sant Llorenç des Cardassar",
+    "poblacio": 8431,
+    "total_casos": 11,
+    "taxa_10000": "13,05",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Menorca",
+    "zipcode": "07052",
+    "municipis": "Sant Lluís",
+    "poblacio": 6798,
+    "total_casos": 9,
+    "taxa_10000": "13,24",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07053",
+    "municipis": "Santa Eugènia",
+    "poblacio": 1561,
+    "total_casos": 0,
+    "taxa_10000": "0,00",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Eivissa",
+    "zipcode": "07054",
+    "municipis": "Santa Eulària des Riu",
+    "poblacio": 38015,
+    "total_casos": 40,
+    "taxa_10000": "10,52",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07055",
+    "municipis": "Santa Margalida",
+    "poblacio": 12485,
+    "total_casos": 10,
+    "taxa_10000": "8,01",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07056",
+    "municipis": "Santa María del Camí",
+    "poblacio": 7375,
+    "total_casos": 11,
+    "taxa_10000": "14,92",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07057",
+    "municipis": "Santanyí",
+    "poblacio": 12237,
+    "total_casos": 4,
+    "taxa_10000": "3,27",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07058",
+    "municipis": "Selva",
+    "poblacio": 4014,
+    "total_casos": 6,
+    "taxa_10000": "14,95",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07047",
+    "municipis": "Sencelles",
+    "poblacio": 3290,
+    "total_casos": 3,
+    "taxa_10000": "9,12",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07060",
+    "municipis": "Sineu",
+    "poblacio": 3862,
+    "total_casos": 5,
+    "taxa_10000": "12,95",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07061",
+    "municipis": "Sóller",
+    "poblacio": 13705,
+    "total_casos": 10,
+    "taxa_10000": "7,30",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07062",
+    "municipis": "Son Servera",
+    "poblacio": 11568,
+    "total_casos": 9,
+    "taxa_10000": "7,78",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07063",
+    "municipis": "Valldemossa",
+    "poblacio": 1969,
+    "total_casos": 1,
+    "taxa_10000": "5,08",
+    "mapping_municipality": "Alaior"
+  },
+  {
+    "illa": "Mallorca",
+    "zipcode": "07065",
+    "municipis": "Vilafranca de Bonany",
+    "poblacio": 3380,
+    "total_casos": 2,
+    "taxa_10000": "5,92",
+    "mapping_municipality": "Vilafranc de Bonany"
+  }
+]

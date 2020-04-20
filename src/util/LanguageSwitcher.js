@@ -1,30 +1,31 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import moment from 'moment'
+import numbro from 'numbro'
+
+import './LanguageSwitcher.css'
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation()
   return (
-    <div
-      style={{
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
+    <div className="langSelectors">
       <span
+        className="langSpan"
         key="es"
         onClick={() => {
           i18n.changeLanguage('es')
           moment.locale('es')
-        }}
-        style={{ margin: 20 }}>
+          numbro.setLanguage('es-ES')
+        }}>
         ES
       </span>
       <span
+        className="langSpan"
         key="ca"
         onClick={() => {
           i18n.changeLanguage('ca')
           moment.locale('ca')
+          numbro.setLanguage('es-ES')
         }}>
         CA
       </span>
