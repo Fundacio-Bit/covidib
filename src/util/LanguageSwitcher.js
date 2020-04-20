@@ -7,8 +7,8 @@ import './LanguageSwitcher.css'
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation()
   return (
-    <div class="langSelectors">
-      <span class="langSpan"
+    <div className="langSelectors">
+      <span className="langSpan"
         key="es"
         onClick={() => {
           i18n.changeLanguage('es')
@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
         >
         ES
       </span>
-      <span class="langSpan"
+      <span className="langSpan"
         key="ca"
         onClick={() => {
           i18n.changeLanguage('ca')
