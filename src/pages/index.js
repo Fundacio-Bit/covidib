@@ -59,6 +59,34 @@ const Index = () => {
 
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp)
 
+  // 1.188 million inhabitants
+  // to calculate deaths per million inhabitants we apply a 1/1.188 factor
+  let deathsPerMillion = nodes.map((item) => { return item.exitus/1.188 })
+
+  const calculateMovingAverageSeries = (numbersArray, range) => {
+    let resultingSeries = []
+    for (let i = 0; i < (numbersArray.length + 1 - range); i++) {
+      let dataInRange = numbersArray.slice(i, i+range)
+      let sum = dataInRange.reduce((previous, current) => current += previous);
+      let avg = (sum / dataInRange.length).toFixed(2)
+      resultingSeries.push(avg)    
+    }
+    return resultingSeries
+  }
+  let lastWeekNodes = nodes.slice(Math.max(nodes.length - 7, 0))
+  // 1.188 million inhabitants
+  // to calculate deaths per million inhabitants we apply a 1/1.188 factor
+  let lastWeekDeathsPerMillion = lastWeekNodes.map((item) => { return item.exitus/1.188 })
+  // moving average last day
+  let sum = lastWeekDeathsPerMillion.reduce((previous, current) => current += previous);
+  let avg = (sum / lastWeekDeathsPerMillion.length).toFixed(2)
+  console.log(avg)
+
+  // moving average series
+  let movingAverageSeries = calculateMovingAverageSeries(deathsPerMillion, 7)
+  console.log(movingAverageSeries)
+  
+
   const currentNode = last(nodes)
   let prevDayNode = nodes[nodes.length - 2]
 
