@@ -8,6 +8,7 @@ import "../util/i18n";
 import { useTranslation } from "react-i18next";
 
 import Map from "../charts/map/Map";
+import Map2 from "../charts/map/Map2";
 import LogDeaths from "../charts/LogDeaths";
 import LogCases from "../charts/LogCases";
 import StackedCases from "../charts/StackedCases";
