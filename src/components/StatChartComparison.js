@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   LineChart,
   Line,
@@ -7,12 +7,12 @@ import {
   YAxis,
   Tooltip,
   Legend,
-  ResponsiveContainer
-} from 'recharts'
-import { chain } from 'lodash'
-import { useTranslation } from 'react-i18next'
+  ResponsiveContainer,
+} from "recharts";
+import { chain } from "lodash";
+import { useTranslation } from "react-i18next";
 
-import displayDate from '../util/displayDate'
+import displayDate from "../util/displayDate";
 
 const StatChartComparison = ({
   title,
@@ -21,19 +21,19 @@ const StatChartComparison = ({
   xKey,
   color,
   y2Key,
-  color2
+  color2,
 }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const filteredData = chain(data)
     .reject({ [yKey]: null })
-    .sortBy('data')
-    .value()
+    .sortBy("data")
+    .value();
   return (
     <section>
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={filteredData} margin={{ top: 15 }}>
-          <CartesianGrid strokeDasharray="3 3" verticalPoints={15} />
+          <CartesianGrid strokeDasharray="3 3" />
           <Tooltip
             labelFormatter={displayDate}
             formatter={(v, n) => [v, t(n)]}
@@ -60,7 +60,7 @@ const StatChartComparison = ({
         </LineChart>
       </ResponsiveContainer>
     </section>
-  )
-}
+  );
+};
 
-export default StatChartComparison
+export default StatChartComparison;

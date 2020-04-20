@@ -1,32 +1,35 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next'
-import moment from 'moment'
+import React from "react";
+import { useTranslation } from "react-i18next";
+import moment from "moment";
 
-import './LanguageSwitcher.css'
+import "./LanguageSwitcher.css";
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation()
+  const { i18n } = useTranslation();
   return (
-    <div class="langSelectors">
-      <span class="langSpan"
+    <div className="langSelectors">
+      <span
+        className="langSpan"
         key="es"
         onClick={() => {
-          i18n.changeLanguage('es')
-          moment.locale('es')
+          i18n.changeLanguage("es");
+          moment.locale("es");
         }}
-        >
+      >
         ES
       </span>
-      <span class="langSpan"
+      <span
+        className="langSpan"
         key="ca"
         onClick={() => {
-          i18n.changeLanguage('ca')
-          moment.locale('ca')
-        }}>
+          i18n.changeLanguage("ca");
+          moment.locale("ca");
+        }}
+      >
         CA
       </span>
     </div>
-  )
-}
+  );
+};
 
-export default LanguageSwitcher
+export default LanguageSwitcher;
