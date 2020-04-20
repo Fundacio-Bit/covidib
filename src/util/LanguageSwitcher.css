@@ -5,11 +5,11 @@
   font-size: 1.3rem;
 }
 
-span {
+.langSpan {
   margin: 1.5em
 }
 
-span:hover {
+.langSpan:hover {
   text-decoration: underline;
   color: black;
   cursor: pointer;  
