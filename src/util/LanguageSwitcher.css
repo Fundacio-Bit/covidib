@@ -1,0 +1,18 @@
+div {
+  flex-direction: row;
+  justify-content: center;
+  align-items: 'center';
+  font-size: 1.3rem;
+}
+
+span {
+  margin: 1.5em
+}
+
+span:hover {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;  
+}
+
+

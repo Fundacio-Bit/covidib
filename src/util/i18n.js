@@ -24,7 +24,7 @@ const resources = {
       situ_actual: 'Situación actual en las Islas Baleares',
       positius_acumulats: 'Positivos acumulados',
       exitus: 'Fallecimientos',
-      darrera_act: 'Última actualización',
+      darrera_act: 'Actualizado',
       proves_laboratori: 'Pruebas laboratorio',
       estat_alarma: 'Estado de alarma',
       confinament: 'Parón actividad'
@@ -52,7 +52,7 @@ const resources = {
       situ_actual: 'Situació actual a les Illes Balears',
       positius_acumulats: 'Positius acumulats',
       exitus: 'Exitus',
-      darrera_act: 'Darrera actualització',
+      darrera_act: 'Actualitzat',
       proves_laboratori: 'Proves laboratori',
       estat_alarma: "Estat d'alarma",
       confinament: "Aturada d'activitats"
