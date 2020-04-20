@@ -77,6 +77,8 @@ const Map = ({ setContent }) => {
                       outline: 'none'
                     }
                   }}
+                  stroke="#999"
+                  strokeWidth={0.5}
                 />
               )
             })
