@@ -37,14 +37,17 @@ const Index = () => {
           uci
           professionals_positius
           mallorca_hospitalizats
+          mallorca_uci
           mallorca_professionals_positius
           mallorca_professionals_en_vig
           mallorca_uvac
           menorca_hospitalizats
+          menorca_uci
           menorca_professionals_positius
           menorca_professionals_en_vig
           menorca_uvac
           ibiza_hospitalizats
+          ibiza_uci
           ibiza_professionals_positius
           ibiza_professionals_en_vig
           ibiza_uvac
@@ -87,7 +90,7 @@ const Index = () => {
           <IslandsOverview
             islands={t('mallorca')}
             hospitalized={currentNode.mallorca_hospitalizats}
-            uci="?"
+            uci={currentNode.mallorca_uci}
             positiveProfs={currentNode.mallorca_professionals_positius}
             watchedProfs={currentNode.mallorca_professionals_en_vig}
             uvac={currentNode.mallorca_uvac}
@@ -95,7 +98,7 @@ const Index = () => {
           <IslandsOverview
             islands={t('menorca')}
             hospitalized={currentNode.menorca_hospitalizats}
-            uci="?"
+            uci={currentNode.menorca_uci}
             positiveProfs={currentNode.menorca_professionals_positius}
             watchedProfs={currentNode.menorca_professionals_en_vig}
             uvac={currentNode.menorca_uvac}
@@ -103,7 +106,7 @@ const Index = () => {
           <IslandsOverview
             islands={t('pitiuses')}
             hospitalized={currentNode.ibiza_hospitalizats}
-            uci="?"
+            uci={currentNode.ibiza_uci}
             positiveProfs={currentNode.ibiza_professionals_positius}
             watchedProfs={currentNode.ibiza_professionals_en_vig}
             uvac={currentNode.ibiza_uvac}
