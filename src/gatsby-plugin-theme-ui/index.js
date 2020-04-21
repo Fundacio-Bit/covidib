@@ -5,6 +5,7 @@ export default {
     text: "#333",
     muted: "#999",
     gray: "#777",
+    white: "#ffffff",
   },
   fonts: {
     systemSans: "Bariol Regular, Arial, Helvetica, sans-serif",
@@ -51,6 +52,15 @@ export default {
       fontSize: 3,
       px: 4,
       mx: "auto",
+    },
+    dataValue: {
+      color: "white",
+      width: "100%",
+      textAlign: "center",
+      fontFamily: "heading",
+      lineHeight: "heading",
+      fontWeight: "heading",
+      fontSize: 5,
     },
   },
   styles: {
