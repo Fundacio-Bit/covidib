@@ -1,5 +1,6 @@
 export default {
   colors: {
+    background: "#f0f0f0",
     headerBackground: "#d42256",
     headerText: "white",
   },
@@ -31,4 +32,4 @@ export default {
       display: "inline",
     },
   },
-}
+};
