@@ -13,6 +13,7 @@ import { chain } from "lodash";
 import { useTranslation } from "react-i18next";
 
 import displayDate from "../util/displayDate";
+import displayNumber from "../util/displayNumber";
 
 const StatChartComparison = ({
   title,
@@ -36,7 +37,7 @@ const StatChartComparison = ({
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip
             labelFormatter={displayDate}
-            formatter={(v, n) => [v, t(n)]}
+            formatter={(v, n) => [displayNumber(v), t(n)]}
           />
           <Legend formatter={t} />
           <Line
@@ -56,7 +57,7 @@ const StatChartComparison = ({
             isAnimationActive={false}
           />
           <XAxis dataKey={xKey} tickFormatter={displayDate} />
-          <YAxis interval={0} />
+          <YAxis interval={0} tickFormatter={displayNumber} />
         </LineChart>
       </ResponsiveContainer>
     </section>
