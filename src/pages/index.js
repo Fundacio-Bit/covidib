@@ -7,6 +7,7 @@ import last from 'lodash/last'
 import '../util/i18n'
 import { useTranslation } from 'react-i18next'
 
+import TooltipMap from '../charts/map/TooltipMap'
 import LogDeaths from '../charts/LogDeaths'
 import LogCases from '../charts/LogCases'
 import StackedCases from '../charts/StackedCases'
@@ -70,6 +71,7 @@ const Index = () => {
       <main>
         <div className="container">
           <Overview currentNode={currentNode} prevDayNode={prevDayNode} />
+          <TooltipMap />
           <StatChart
             title={t('curats_title')}
             data={nodes}

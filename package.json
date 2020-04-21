@@ -33,10 +33,13 @@
     "i18next-xhr-backend": "^3.2.2",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
+    "numbro": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-i18next": "^11.3.5",
+    "react-simple-maps": "^2.0.0",
+    "react-tooltip": "^4.2.5",
     "recharts": "^1.8.3",
     "theme-ui": "^0.2.44"
   },
