@@ -59,10 +59,6 @@ const Index = () => {
 
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
 
-  function sayHi(name) {
-    return "Result: " + name;
-  }
-
   // 1.188 million inhabitants
   // to calculate deaths per million inhabitants we apply a 1/1.188 factor
   let deathsPerMillion = nodes.map((item) => {
