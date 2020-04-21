@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-theme-github-stats",
-  "version": "0.5.3",
+  "name": "covidib",
+  "version": "1.0.1",
   "main": "index.js",
-  "license": "MIT",
+  "license": "GPLv3",
   "author": {
-    "name": "Benjamin Lannon",
-    "email": "benjamin@lannonbr.com",
-    "url": "https://lannonbr.com"
+    "name": "Fundacio Bit",
+    "email": "info@fundaciobit.org",
+    "url": "https://www.fundaciobit.org"
   },
   "keywords": [
     "gatsby",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lannonbr/gatsby-theme-github-stats"
+    "url": "https://github.com/Fundacio-Bit/covidib"
   },
   "dependencies": {
     "@emotion/core": "^10.0.21",

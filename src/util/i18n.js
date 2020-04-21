@@ -43,6 +43,7 @@ const resources = {
       tax_10k: "Tasa por 10.000 habitantes",
       poblacio: "Población",
       uvac_actius: "Activos UVAC",
+      act_dades: "Último registro",
     },
   },
   ca: {
@@ -80,6 +81,7 @@ const resources = {
       tax_10k: "Taxa per 10.000 habitants",
       poblacio: "Población",
       uvac_actius: "Actius UVAC",
+      act_dades: "Darrer registre",
     },
   },
 };

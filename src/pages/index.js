@@ -1,6 +1,7 @@
-import React from "react";
+/** @jsx jsx */
+import { jsx } from "theme-ui";
 import { useStaticQuery, graphql } from "gatsby";
-import { Styled } from "theme-ui";
+import { Container } from "theme-ui";
 import "moment/locale/ca";
 import "moment/locale/es";
 import last from "lodash/last";
@@ -20,7 +21,7 @@ import Overview from "../components/Overview";
 import IslandsOverview from "../components/IslandsOverview";
 import Colors from "../constants/Colors";
 
-import "./index.css";
+import "../css/typography.css";
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -59,16 +60,25 @@ const Index = () => {
   `);
 
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
-
   const currentNode = last(nodes);
-
   const { t } = useTranslation();
-
   return (
-    <Styled.root>
+    <div
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        variant: "layout.root",
+      }}
+    >
       <Header />
-      <main>
-        <div className="container">
+      <main
+        sx={{
+          width: "100%",
+          flex: "1 1 auto",
+        }}
+      >
+        <Container p={4} bg="background">
           <Overview />
           <TooltipMap />
           <StatChart
@@ -129,10 +139,17 @@ const Index = () => {
             xKey="data"
             color={Colors.blue}
           />
-          <Footer />
-        </div>
+        </Container>
       </main>
-    </Styled.root>
+      <footer
+        sx={{
+          width: "100%",
+          variant: "layout.footer",
+        }}
+      >
+        <Footer />
+      </footer>
+    </div>
   );
 };
 
