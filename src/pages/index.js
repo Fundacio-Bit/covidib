@@ -61,7 +61,6 @@ const Index = () => {
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
 
   const currentNode = last(nodes);
-  let prevDayNode = nodes[nodes.length - 2];
 
   const { t } = useTranslation();
 
@@ -70,7 +69,7 @@ const Index = () => {
       <Header />
       <main>
         <div className="container">
-          <Overview currentNode={currentNode} prevDayNode={prevDayNode} />
+          <Overview />
           <TooltipMap />
           <StatChart
             title={t("curats_title")}
