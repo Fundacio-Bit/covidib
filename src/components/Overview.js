@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { useTranslation } from "react-i18next";
+import numbro from "numbro";
 import last from "lodash/last";
 
 const Overview = () => {
@@ -30,33 +31,47 @@ const Overview = () => {
       <h2>{t("situ_actual")}</h2>
       <ul>
         <li>
-          {currentNode.nous_positius}
+          {numbro(currentNode.nous_positius).format({
+            thousandSeparated: true,
+          })}
           <p>{t("nous_positius")}</p>
         </li>
         <li>
-          {currentNode.percentatge_increment}%
-          <p>{t("percentatge_increment")}</p>
+          {numbro(currentNode.percentatge_increment).format({
+            thousandSeparated: true,
+          })}
+          %<p>{t("percentatge_increment")}</p>
         </li>
         <li>
-          {currentNode.curats}
+          {numbro(currentNode.curats).format({
+            thousandSeparated: true,
+          })}
           <p>{t("total_curats")}</p>
         </li>
         <li>
-          {currentNode.exitus}
+          {numbro(currentNode.exitus).format({
+            thousandSeparated: true,
+          })}
           <p>{t("total_exitus")}</p>
         </li>
         <li>
-          {currentNode.positius_actius}
+          {numbro(currentNode.positius_actius).format({
+            thousandSeparated: true,
+          })}
           <p>{t("positius_actius")}</p>
         </li>
       </ul>
       <ul>
         <li>
-          {currentNode.positius_acumulats}
+          {numbro(currentNode.positius_acumulats).format({
+            thousandSeparated: true,
+          })}
           <p>{t("positius_acumulats")}</p>
         </li>
         <li>
-          {currentNode.hospitalitzats}
+          {numbro(currentNode.hospitalitzats).format({
+            thousandSeparated: true,
+          })}
           <p>{t("hospitalitzats_avui")}</p>
         </li>
         <li>
@@ -64,15 +79,21 @@ const Overview = () => {
           <p>{t("uci_avui")}</p>
         </li>
         <li>
-          {currentNode.professionals_positius}
+          {numbro(currentNode.professionals_positius).format({
+            thousandSeparated: true,
+          })}
           <p>{t("professionals_positius")}</p>
         </li>
         <li>
-          {currentNode.proves_laboratori}
+          {numbro(currentNode.proves_laboratori).format({
+            thousandSeparated: true,
+          })}
           <p>{t("proves_laboratori")}</p>
         </li>
         <li>
-          {currentNode.uvac_actius}
+          {numbro(currentNode.uvac_actius).format({
+            thousandSeparated: true,
+          })}
           <p>{t("uvac_actius")}</p>
         </li>
       </ul>
