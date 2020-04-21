@@ -5,6 +5,8 @@ import numbro from "numbro";
 
 import Map from "./Map";
 
+import "./TooltipMap.css";
+
 function TooltipMap() {
   const [content, setContent] = useState({});
   const { t } = useTranslation();
@@ -32,7 +34,7 @@ function TooltipMap() {
     <section id="overview">
       <h2>{t("per_municipi")}</h2>
       <Map setContent={setContent} />
-      <ReactTooltip multiline backgroundColor="#222" textColor="#fff">
+      <ReactTooltip multiline className="map-tooltip">
         {tooltipContent}
       </ReactTooltip>
     </section>
