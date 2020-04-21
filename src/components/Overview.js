@@ -31,7 +31,7 @@ const Overview = () => {
   const { t } = useTranslation();
   const currentNode = last(data.allDataJson.nodes);
   return (
-    <Grid columns={[2, 3, 4, 5]}>
+    <Grid columns={[2, 3, 4, 5]} gap={3}>
       <DataBox
         title={t("nous_positius")}
         data={numbro(currentNode.nous_positius).format({
