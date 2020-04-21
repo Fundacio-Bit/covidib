@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   ResponsiveContainer,
   LineChart,
@@ -6,22 +6,24 @@ import {
   ReferenceArea,
   Line,
   XAxis,
-  YAxis
-} from 'recharts'
-import { useTranslation } from 'react-i18next'
+  YAxis,
+} from "recharts";
+import { useTranslation } from "react-i18next";
 
-import Colors from '../constants/Colors'
-import displayDate from '../util/displayDate'
+import Colors from "../constants/Colors";
+import displayDate from "../util/displayDate";
+import displayNumber from "../util/displayNumber";
 
 const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <section>
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart
           data={data}
-          margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+          margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
+        >
           <defs>
             <linearGradient id="colorAlm" x1="0" y1="0" x2="1" y2="0">
               <stop
@@ -45,10 +47,10 @@ const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
               x="2020-03-14T00:00:00.000Z"
               stroke={Colors.alarmYellow}
               label={{
-                value: t('estat_alarma'),
+                value: t("estat_alarma"),
                 fontSize: 12,
                 offset: 10,
-                position: 'insideTopLeft'
+                position: "insideTopLeft",
               }}
             />
           )}
@@ -66,10 +68,10 @@ const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
               x="2020-03-28T00:00:00.000Z"
               stroke={Colors.alarmRed}
               label={{
-                value: t('confinament'),
+                value: t("confinament"),
                 fontSize: 12,
                 offset: 10,
-                position: 'insideTopLeft'
+                position: "insideTopLeft",
               }}
             />
           )}
@@ -106,15 +108,16 @@ const LogChart = ({ data, title, yKey, xKey, displayAlarm }) => {
           />
           <XAxis dataKey={xKey} tickFormatter={displayDate} />
           <YAxis
-            scale="log"
-            ticks={[10, 100, 1000, 10000]}
-            domain={['dataMin', 'dataMax']}
             allowDataOverflow
+            domain={["dataMin", "dataMax"]}
+            scale="log"
+            tickFormatter={displayNumber}
+            ticks={[10, 100, 1000, 10000]}
           />
         </LineChart>
       </ResponsiveContainer>
     </section>
-  )
-}
+  );
+};
 
-export default LogChart
+export default LogChart;
