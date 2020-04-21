@@ -1,40 +1,44 @@
-import React, { useState } from 'react'
-import ReactTooltip from 'react-tooltip'
-import { useTranslation } from 'react-i18next'
-import numbro from 'numbro'
+import React, { useState } from "react";
+import ReactTooltip from "react-tooltip";
+import { useTranslation } from "react-i18next";
+import numbro from "numbro";
 
-import Map from './Map'
+import Map from "./Map";
+
+import "./TooltipMap.css";
 
 function TooltipMap() {
-  const [content, setContent] = useState({})
-  const { t } = useTranslation()
+  const [content, setContent] = useState({});
+  const { t } = useTranslation();
 
   const tooltipContent = Object.keys(content).length ? (
     <>
       <h3>{content.municipio}</h3>
       <p>
-        {t('total_casos')}:{' '}
+        {t("total_casos")}:{" "}
         {numbro(content.casos).format({ thousandSeparated: true })}
       </p>
       <p>
-        {t('tax_10k')}: {content.taxa_10000}
+        {t("tax_10k")}: {content.taxa_10000}
       </p>
       <p>
-        {t('poblacio')}:{' '}
+        {t("poblacio")}:{" "}
         {numbro(content.poblacio).format({ thousandSeparated: true })}
       </p>
     </>
   ) : (
-    ''
-  )
+    ""
+  );
 
   return (
     <section id="overview">
-      <h2>{t('per_municipi')}</h2>
+      <h2>{t("per_municipi")}</h2>
       <Map setContent={setContent} />
-      <ReactTooltip multiline>{tooltipContent}</ReactTooltip>
+      <ReactTooltip multiline className="map-tooltip">
+        {tooltipContent}
+      </ReactTooltip>
     </section>
-  )
+  );
 }
 
-export default TooltipMap
+export default TooltipMap;
