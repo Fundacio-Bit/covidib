@@ -1,5 +1,5 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import {
   BarChart,
   Tooltip,
@@ -7,12 +7,13 @@ import {
   Bar,
   XAxis,
   YAxis,
-  ResponsiveContainer
-} from 'recharts'
-import { useTranslation } from 'react-i18next'
+  ResponsiveContainer,
+} from "recharts";
+import { useTranslation } from "react-i18next";
 
-import Colors from '../constants/Colors'
-import displayDate from '../util/displayDate'
+import Colors from "../constants/Colors";
+import displayDate from "../util/displayDate";
+import displayNumber from "../util/displayNumber";
 
 const StackedCases = ({ title }) => {
   const data = useStaticQuery(graphql`
@@ -28,8 +29,8 @@ const StackedCases = ({ title }) => {
         }
       }
     }
-  `)
-  const { t } = useTranslation()
+  `);
+  const { t } = useTranslation();
   return (
     <section id="fullchart">
       <h2>{title}</h2>
@@ -40,13 +41,14 @@ const StackedCases = ({ title }) => {
             top: 20,
             right: 30,
             left: 20,
-            bottom: 5
-          }}>
+            bottom: 5,
+          }}
+        >
           <XAxis dataKey="data" tickFormatter={displayDate} />
-          <YAxis />
+          <YAxis tickFormatter={displayNumber} />
           <Tooltip
             labelFormatter={displayDate}
-            formatter={(v, n) => [v, t(n)]}
+            formatter={(v, n) => [displayNumber(v), t(n)]}
           />
           <Legend formatter={t} />
           <Bar dataKey="positius_actius" stackId="a" fill={Colors.red} />
@@ -54,7 +56,7 @@ const StackedCases = ({ title }) => {
         </BarChart>
       </ResponsiveContainer>
     </section>
-  )
-}
+  );
+};
 
-export default StackedCases
+export default StackedCases;
