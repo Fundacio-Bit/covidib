@@ -2,7 +2,6 @@ import React from "react";
 import {
   LineChart,
   Line,
-  CartesianGrid,
   XAxis,
   YAxis,
   Tooltip,
@@ -45,7 +44,6 @@ const StatChart = ({ title, data, yKey, xKey, color, isPercentageChart }) => {
             domain={isPercentageChart ? [0, 100] : ["dataMin", "dataMax"]}
             tickFormatter={displayNumber}
           />
-          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
         </LineChart>
       </ResponsiveContainer>
     </section>

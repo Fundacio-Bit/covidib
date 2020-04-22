@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx, Grid } from "theme-ui";
 import { useStaticQuery, graphql } from "gatsby";
 import { Container } from "theme-ui";
 import "moment/locale/ca";
@@ -81,22 +81,24 @@ const Index = () => {
         <Container p={4} bg="background">
           <Overview />
           <TooltipMap />
-          <StatChart
-            title={t("curats_title")}
-            data={nodes}
-            yKey="curats"
-            xKey="data"
-            color={Colors.green}
-          />
-          <StatChartComparison
-            title={t("actius_curats_title")}
-            data={nodes}
-            yKey="positius_actius"
-            y2Key="curats"
-            xKey="data"
-            color={Colors.purple}
-            color2={Colors.green}
-          />
+          <Grid columns={[1, 2]} gap={4} py={3} width={300}>
+            <StatChart
+              title={t("curats_title")}
+              data={nodes}
+              yKey="curats"
+              xKey="data"
+              color={Colors.contrast}
+            />
+            <StatChartComparison
+              title={t("actius_curats_title")}
+              data={nodes}
+              yKey="positius_actius"
+              y2Key="curats"
+              xKey="data"
+              color={Colors.primary}
+              color2={Colors.contrast}
+            />
+          </Grid>
           <StackedCases title={t("actius_curats_title")} />
           <IslandsOverview
             islands={t("mallorca")}
@@ -122,33 +124,30 @@ const Index = () => {
             watchedProfs={currentNode.ibiza_professionals_en_vig}
             uvac={currentNode.ibiza_uvac}
           />
-          <LogDeaths />
-          <LogCases />
-          <StatChart
-            title={t("casos_nous_title")}
-            data={nodes}
-            yKey="nous_positius"
-            xKey="data"
-            color={Colors.red}
-          />
-          <StatChart
-            isPercentageChart
-            title={t("percentatge_increment_title")}
-            data={nodes}
-            yKey="percentatge_increment"
-            xKey="data"
-            color={Colors.blue}
-          />
+          <Grid columns={[1, 2]} gap={4} py={3} width={300}>
+            <LogDeaths />
+            <LogCases />
+          </Grid>
+          <Grid columns={[1, 2]} gap={4} py={3} width={300}>
+            <StatChart
+              title={t("casos_nous_title")}
+              data={nodes}
+              yKey="nous_positius"
+              xKey="data"
+              color={Colors.primary}
+            />
+            <StatChart
+              isPercentageChart
+              title={t("percentatge_increment_title")}
+              data={nodes}
+              yKey="percentatge_increment"
+              xKey="data"
+              color={Colors.tertiary}
+            />
+          </Grid>
         </Container>
       </main>
-      <footer
-        sx={{
-          width: "100%",
-          variant: "layout.footer",
-        }}
-      >
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 };

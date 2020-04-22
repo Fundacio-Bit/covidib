@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Container, Image, Box, Flex, Text, Heading } from "theme-ui";
+import { Container, Image, Box, Flex, Text, Styled } from "theme-ui";
 import { useStaticQuery, graphql } from "gatsby";
 import Helmet from "react-helmet";
 import { useTranslation } from "react-i18next";
@@ -64,7 +64,7 @@ const HeaderComponent = () => {
           <Box px={4} py={3} my="auto">
             <Flex>
               <Centered>
-                <Heading as="h1">{title}</Heading>
+                <Styled.h1>{title}</Styled.h1>
               </Centered>
               <Centered>
                 <Text variant="subtitle">{t("situ_actual")}</Text>
@@ -75,10 +75,10 @@ const HeaderComponent = () => {
                 paddingTop: 2,
               }}
             >
-              <Text variant="p" color="muted">
+              <Text variant="update">
                 {t("darrera_act")}: {date}
               </Text>
-              <Text variant="p" color="muted">
+              <Text variant="update">
                 {t("act_dades")}: {date}
               </Text>
             </div>

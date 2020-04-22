@@ -1,12 +1,8 @@
+import Colors from "../constants/Colors";
+
 export default {
-  colors: {
-    primary: "#d42256",
-    background: "#f0f0f0",
-    text: "#333",
-    muted: "#999",
-    gray: "#777",
-    white: "#ffffff",
-  },
+  // breakpoints: ["40em", "52em", "64em"],
+  colors: Colors,
   fonts: {
     systemSans: "Bariol Regular, Arial, Helvetica, sans-serif",
     heading: "inherit",
@@ -26,6 +22,7 @@ export default {
     },
     footer: {
       bg: "background",
+      height: 260,
     },
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
@@ -41,15 +38,15 @@ export default {
   },
   images: {
     caibLogo: {
-      width: 128,
-      height: 128,
+      width: [0, 48, 64, 128],
+      height: [0, 48, 64, 128],
       mt: 20,
     },
   },
   text: {
     subtitle: {
       color: "gray",
-      fontSize: 3,
+      fontSize: [1, 2, 3],
       px: 4,
       mx: "auto",
     },
@@ -62,6 +59,20 @@ export default {
       fontWeight: "heading",
       fontSize: 5,
     },
+    update: {
+      color: "muted",
+      fontSize: [0, 1, 2, 3],
+      mx: "auto",
+    },
+  },
+  buttons: {
+    lang: {
+      color: "white",
+      bg: "muted",
+      "&:hover": {
+        bg: "primary",
+      },
+    },
   },
   styles: {
     root: {
@@ -72,13 +83,14 @@ export default {
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "heading",
-      fontSize: 5,
+      fontSize: [3, 5],
     },
     p: {
       color: "text",
       fontFamily: "body",
       fontWeight: "body",
       lineHeight: "body",
+      fontSize: [0, 1, 2, 3],
     },
     a: {
       color: "primary",
