@@ -59,6 +59,12 @@ export default {
       fontWeight: "heading",
       fontSize: 5,
     },
+    dataLabel: {
+      width: "100%",
+      textAlign: "center",
+      px: 1,
+      weight: "bold",
+    },
     update: {
       color: "muted",
       fontSize: [0, 1, 2, 3],

@@ -14,7 +14,7 @@ const DataBox = ({ title, data, ...props }) => (
   >
     <Box sx={{ my: "auto", width: "100%" }}>
       <Text variant="dataValue">{data}</Text>
-      <Text sx={{ width: "100%", textAlign: "center", px: 1 }}>{title}</Text>
+      <Text variant="dataLabel">{title}</Text>
     </Box>
   </Flex>
 );
