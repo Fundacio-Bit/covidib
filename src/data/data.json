@@ -1,5 +1,4 @@
-[
-  {
+[{
     "percentatge_increment": 100.0,
     "data": "2020-02-06T00:00:00.000Z",
     "positius_acumulats": 1,
@@ -1142,7 +1141,7 @@
     "nous_positius": 20,
     "positius_acumulats": 1808,
     "curats": 1005,
-    "exitus": 165,
+    "exitus": 161,
     "positius_actius": 642,
     "hospitalitzats": 391,
     "uci": 74,
@@ -1171,9 +1170,9 @@
     "nous_positius": 28,
     "positius_acumulats": 1836,
     "curats": 1017,
-    "exitus": 168,
-    "positius_actius": 642,
-    "hospitalitzats": 391,
+    "exitus": 164,
+    "positius_actius": 655,
+    "hospitalitzats": 404,
     "uci": 72,
     "uvac_actius": 547,
     "professionals_positius": 134,
