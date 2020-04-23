@@ -2,7 +2,6 @@ import React from "react";
 import {
   LineChart,
   Line,
-  CartesianGrid,
   XAxis,
   YAxis,
   Tooltip,
@@ -34,7 +33,6 @@ const StatChartComparison = ({
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={filteredData} margin={{ top: 15 }}>
-          <CartesianGrid strokeDasharray="3 3" />
           <Tooltip
             labelFormatter={displayDate}
             formatter={(v, n) => [displayNumber(v), t(n)]}

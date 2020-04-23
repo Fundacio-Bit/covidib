@@ -1,6 +1,7 @@
-import React from "react";
+/** @jsx jsx */
+import { jsx, Grid } from "theme-ui";
 import { useStaticQuery, graphql } from "gatsby";
-import { Styled } from "theme-ui";
+import { Container } from "theme-ui";
 import "moment/locale/ca";
 import "moment/locale/es";
 import last from "lodash/last";
@@ -20,7 +21,7 @@ import Overview from "../components/Overview";
 import IslandsOverview from "../components/IslandsOverview";
 import Colors from "../constants/Colors";
 
-import "./index.css";
+import "../css/typography.css";
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -59,34 +60,45 @@ const Index = () => {
   `);
 
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
-
   const currentNode = last(nodes);
-
   const { t } = useTranslation();
-
   return (
-    <Styled.root>
+    <div
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        variant: "layout.root",
+      }}
+    >
       <Header />
-      <main>
-        <div className="container">
+      <main
+        sx={{
+          width: "100%",
+          flex: "1 1 auto",
+        }}
+      >
+        <Container p={4} bg="background">
           <Overview />
           <TooltipMap />
-          <StatChart
-            title={t("curats_title")}
-            data={nodes}
-            yKey="curats"
-            xKey="data"
-            color={Colors.green}
-          />
-          <StatChartComparison
-            title={t("actius_curats_title")}
-            data={nodes}
-            yKey="positius_actius"
-            y2Key="curats"
-            xKey="data"
-            color={Colors.purple}
-            color2={Colors.green}
-          />
+          <Grid columns={[1, 2]} gap={4} py={3} width={300}>
+            <StatChart
+              title={t("curats_title")}
+              data={nodes}
+              yKey="curats"
+              xKey="data"
+              color={Colors.contrast}
+            />
+            <StatChartComparison
+              title={t("actius_curats_title")}
+              data={nodes}
+              yKey="positius_actius"
+              y2Key="curats"
+              xKey="data"
+              color={Colors.primary}
+              color2={Colors.contrast}
+            />
+          </Grid>
           <StackedCases title={t("actius_curats_title")} />
           <IslandsOverview
             islands={t("mallorca")}
@@ -112,27 +124,31 @@ const Index = () => {
             watchedProfs={currentNode.ibiza_professionals_en_vig}
             uvac={currentNode.ibiza_uvac}
           />
-          <LogDeaths />
-          <LogCases />
-          <StatChart
-            title={t("casos_nous_title")}
-            data={nodes}
-            yKey="nous_positius"
-            xKey="data"
-            color={Colors.red}
-          />
-          <StatChart
-            isPercentageChart
-            title={t("percentatge_increment_title")}
-            data={nodes}
-            yKey="percentatge_increment"
-            xKey="data"
-            color={Colors.blue}
-          />
-          <Footer />
-        </div>
+          <Grid columns={[1, 2]} gap={4} py={3} width={300}>
+            <LogDeaths />
+            <LogCases />
+          </Grid>
+          <Grid columns={[1, 2]} gap={4} py={3} width={300}>
+            <StatChart
+              title={t("casos_nous_title")}
+              data={nodes}
+              yKey="nous_positius"
+              xKey="data"
+              color={Colors.primary}
+            />
+            <StatChart
+              isPercentageChart
+              title={t("percentatge_increment_title")}
+              data={nodes}
+              yKey="percentatge_increment"
+              xKey="data"
+              color={Colors.tertiary}
+            />
+          </Grid>
+        </Container>
       </main>
-    </Styled.root>
+      <Footer />
+    </div>
   );
 };
 

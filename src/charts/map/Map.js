@@ -1,17 +1,17 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import { scaleLinear } from 'd3-scale'
-import { ComposableMap, Geographies, Geography } from 'react-simple-maps'
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { scaleLinear } from "d3-scale";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
-import geodata from '../../static/muni2.json'
+import geodata from "../../static/muni2.json";
 
-const colorScale = scaleLinear().domain([0, 500]).range(['#ffedea', '#ff5233'])
+const colorScale = scaleLinear().domain([0, 500]).range(["#ffedea", "#d42256"]);
 
 // TODO: improve data structure to avoid re-searching (create
 // a dictionary)
 const findMunicipality = (geoNode, elm) =>
   elm.zipcode === geoNode.properties.codigo_postal ||
-  elm.mapping_municipality === geoNode.properties.municipio
+  elm.mapping_municipality === geoNode.properties.municipio;
 
 const Map = ({ setContent }) => {
   const data = useStaticQuery(graphql`
@@ -28,65 +28,66 @@ const Map = ({ setContent }) => {
         }
       }
     }
-  `)
+  `);
   return (
     <ComposableMap
       data-tip=""
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
         rotate: [-3.0, -39.3, 0],
-        scale: 12000
+        scale: 12000,
       }}
-      height={340}>
+      height={340}
+    >
       {data.allMapdataJson.nodes.length > 0 && (
         <Geographies geography={geodata}>
           {({ geographies }) =>
             geographies.map((geo) => {
               const d = data.allMapdataJson.nodes.find((elm) =>
                 findMunicipality(geo, elm)
-              )
+              );
               return (
                 <Geography
                   onMouseEnter={() => {
                     const municipality = data.allMapdataJson.nodes.find((elm) =>
                       findMunicipality(geo, elm)
-                    )
+                    );
                     setContent({
                       municipio: municipality.municipis,
                       casos: municipality.total_casos,
                       taxa_10000: municipality.taxa_10000,
-                      poblacio: municipality.poblacio
-                    })
+                      poblacio: municipality.poblacio,
+                    });
                   }}
                   onMouseLeave={() => {
-                    setContent({})
+                    setContent({});
                   }}
                   key={geo.rsmKey}
                   geography={{ ...geo, ...d }}
                   style={{
                     default: {
-                      fill: d ? colorScale(d['total_casos']) : '#F5F4F6',
-                      outline: 'none'
+                      fill: d ? colorScale(d["total_casos"]) : "#F5F4F6",
+                      outline: "none",
                     },
                     hover: {
-                      fill: '#F53',
-                      outline: 'none'
+                      fill: "#d42256",
+                      outline: "none",
                     },
                     pressed: {
-                      fill: '#E42',
-                      outline: 'none'
-                    }
+                      fill: "#d42256",
+                      outline: "none",
+                    },
                   }}
-                  stroke="#999"
+                  stroke="#d394a7"
                   strokeWidth={0.5}
                 />
-              )
+              );
             })
           }
         </Geographies>
       )}
     </ComposableMap>
-  )
-}
+  );
+};
 
-export default Map
+export default Map;
