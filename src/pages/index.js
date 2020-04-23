@@ -6,6 +6,7 @@ import "moment/locale/ca";
 import "moment/locale/es";
 import last from "lodash/last";
 import "../util/i18n";
+import calculateMovingAverageSeries from "../util/movingAverage";
 import { useTranslation } from "react-i18next";
 
 import TooltipMap from "../charts/map/TooltipMap";
@@ -61,7 +62,18 @@ const Index = () => {
 
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
   const currentNode = last(nodes);
+
+  // 1.188 million inhabitants in Balearic Islands (Source INE:)
+  // to calculate deaths per million inhabitants we apply a 1/1.188 factor
+  let deathsPerMillionDailySeries = nodes.map((item) => {
+    return { deaths_per_million: (item.exitus / 1.188), data: item.data };
+  });
+
+   // moving average series
+  let movingAverageSeries = calculateMovingAverageSeries(deathsPerMillionDailySeries, 7);
+
   const { t } = useTranslation();
+  
   return (
     <div
       sx={{
@@ -143,6 +155,16 @@ const Index = () => {
               yKey="percentatge_increment"
               xKey="data"
               color={Colors.tertiary}
+            />
+          </Grid>
+          <Grid columns={[1, 2]} gap={4} py={3} width={300}>
+            <StatChart
+              title={t("morts_per_dia_title")}
+              // subtitle={t("mitjana_mobil_subtitle")}
+              data={movingAverageSeries}
+              yKey="moving_avg"
+              xKey="data"
+              color={Colors.primary}
             />
           </Grid>
         </Container>
