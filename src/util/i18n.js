@@ -44,6 +44,8 @@ const resources = {
       poblacio: "Población",
       uvac_actius: "Activos UVAC",
       act_dades: "Último registro",
+      morts_per_dia_title:"Fallecidos-día por millón de habitantes",
+      mitjana_mobil_subtitle:"Media móvil de 7 días",
     },
   },
   ca: {
@@ -82,6 +84,8 @@ const resources = {
       poblacio: "Población",
       uvac_actius: "Actius UVAC",
       act_dades: "Darrer registre",
+      morts_per_dia_title:"Morts-día per milió d'habitants",
+      mitjana_mobil_subtitle:"Mitjana mòbil de 7 dies",
     },
   },
 };
