@@ -63,14 +63,8 @@ const Index = () => {
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
   const currentNode = last(nodes);
 
-  // 1.188 million inhabitants in Balearic Islands (Source INE:)
-  // to calculate deaths per million inhabitants we apply a 1/1.188 factor
-  let deathsPerMillionDailySeries = nodes.map((item) => {
-    return { deaths_per_million: (item.exitus / 1.188), data: item.data };
-  });
-
-   // moving average series
-  let movingAverageSeries = calculateMovingAverageSeries(deathsPerMillionDailySeries, 7);
+  // moving average series
+  let movingAverageSeries = calculateMovingAverageSeries(nodes, 7);
 
   const { t } = useTranslation();
   
