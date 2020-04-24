@@ -1,12 +1,27 @@
-import React from 'react'
-import { Styled, Header } from 'theme-ui'
-import { useStaticQuery, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import { useTranslation } from 'react-i18next'
+/** @jsx jsx */
+import { jsx } from "theme-ui";
+import { Container, Image, Box, Flex, Text, Styled } from "theme-ui";
+import { useStaticQuery, graphql } from "gatsby";
+import Helmet from "react-helmet";
+import { useTranslation } from "react-i18next";
 
-import LanguageSwitcher from '../util/LanguageSwitcher'
-import favicon from '../static/favicon.ico'
-import last from 'lodash/last'
+import LanguageSwitcher from "../util/LanguageSwitcher";
+import favicon from "../static/favicon.ico";
+import last from "lodash/last";
+
+import logo from "../static/goib.png";
+
+const Centered = ({ props, children }) => (
+  <div
+    {...props}
+    sx={{
+      maxWidth: "container",
+      my: "auto",
+    }}
+  >
+    {children}
+  </div>
+);
 
 const HeaderComponent = () => {
   const data = useStaticQuery(graphql`
@@ -23,13 +38,18 @@ const HeaderComponent = () => {
         }
       }
     }
-  `)
+  `);
 
-  const { title } = data.site.siteMetadata
-  const date = last(data.allDataJson.nodes).data
-  const { t } = useTranslation()
+  const { title } = data.site.siteMetadata;
+  const date = last(data.allDataJson.nodes).data;
+  const { t } = useTranslation();
   return (
-    <Header>
+    <header
+      sx={{
+        width: "100%",
+        variant: "layout.header",
+      }}
+    >
       <Helmet title={title}>
         <html lang={`es`} />
         <meta
@@ -38,13 +58,39 @@ const HeaderComponent = () => {
         />
         <link rel="icon" type="image/png" href={favicon} />
       </Helmet>
-      <Styled.h1>{title}</Styled.h1>
-      <LanguageSwitcher />
-      <p>
-        {t('darrera_act')}: {date}
-      </p>
-    </Header>
-  )
-}
+      <Container px={4} py={3}>
+        <Flex>
+          <Image src={logo} variant="caibLogo" />
+          <Box px={4} py={3} my="auto">
+            <Flex>
+              <Centered>
+                <Styled.h1>{title}</Styled.h1>
+              </Centered>
+              <Centered>
+                <Text variant="subtitle">{t("situ_actual")}</Text>
+              </Centered>
+            </Flex>
+            <div
+              sx={{
+                paddingTop: 2,
+              }}
+            >
+              <Text variant="update">
+                {t("darrera_act")}: {date}
+              </Text>
+              <Text variant="update">
+                {t("act_dades")}: {date}
+              </Text>
+            </div>
+          </Box>
+          <div sx={{ mx: "auto" }} />
+          <Centered>
+            <LanguageSwitcher />
+          </Centered>
+        </Flex>
+      </Container>
+    </header>
+  );
+};
 
-export default HeaderComponent
+export default HeaderComponent;

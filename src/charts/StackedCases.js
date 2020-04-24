@@ -32,7 +32,7 @@ const StackedCases = ({ title }) => {
   `);
   const { t } = useTranslation();
   return (
-    <section id="fullchart">
+    <section>
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={400}>
         <BarChart
@@ -51,8 +51,8 @@ const StackedCases = ({ title }) => {
             formatter={(v, n) => [displayNumber(v), t(n)]}
           />
           <Legend formatter={t} />
-          <Bar dataKey="positius_actius" stackId="a" fill={Colors.red} />
-          <Bar dataKey="curats" stackId="a" fill={Colors.green} />
+          <Bar dataKey="positius_actius" stackId="a" fill={Colors.primary} />
+          <Bar dataKey="curats" stackId="a" fill={Colors.contrast} />
         </BarChart>
       </ResponsiveContainer>
     </section>

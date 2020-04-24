@@ -1,9 +1,9 @@
-const path = require("path")
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
     title: "COVID-19",
-    source: "http://www.caib.es/",
+    source: "https://www.caib.es/",
     repoNameWithOwner: "",
   },
   plugins: [
@@ -19,4 +19,4 @@ module.exports = {
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-emotion`,
   ],
-}
+};
