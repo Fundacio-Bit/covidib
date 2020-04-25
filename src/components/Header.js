@@ -37,11 +37,15 @@ const HeaderComponent = () => {
           data(formatString: "DD MMMM", locale: "es")
         }
       }
+      dataupdatedJson {
+        date_updated(formatString: "DD MMMM", locale: "es")
+      }
     }
   `);
 
   const { title } = data.site.siteMetadata;
   const date = last(data.allDataJson.nodes).data;
+  const updatedAt = data.dataupdatedJson.date_updated;
   const { t } = useTranslation();
   return (
     <header
@@ -76,7 +80,7 @@ const HeaderComponent = () => {
               }}
             >
               <Text variant="update">
-                {t("darrera_act")}: {date}
+                {t("darrera_act")}: {updatedAt}
               </Text>
               <Text variant="update">
                 {t("act_dades")}: {date}
