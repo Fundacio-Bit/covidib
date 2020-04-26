@@ -38,7 +38,7 @@ const HeaderComponent = () => {
         }
       }
       dataupdatedJson {
-        date_updated(formatString: "DD MMMM", locale: "es")
+        date_updated(formatString: "DD MMMM, HH:mm", locale: "es")
       }
     }
   `);
