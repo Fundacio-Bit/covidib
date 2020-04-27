@@ -48,7 +48,7 @@ const calculateMovingAverageSeries = (nodes, window) => {
       (previous, current) => (current += previous)
     );
     let avg = (sum / deathsMillionPerDateInWindow.length).toFixed(2);
-    resultingSeries.push({moving_avg: avg, data: lastDateInWindow});
+    resultingSeries.push({mitjana_mobil: avg, data: lastDateInWindow});
   }
   return resultingSeries;
 };
