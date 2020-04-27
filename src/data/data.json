@@ -1154,7 +1154,9 @@
     "ibiza_hospitalizats": 47,
     "ibiza_professionals_positius": 3,
     "ibiza_professionals_en_vig": 11,
-    "ibiza_uvac": 30
+    "ibiza_uvac": 30,
+    "pcr": 20936,
+    "anticossos": 1444
   },
   {
     "percentatge_increment": 1.9,
@@ -1179,7 +1181,9 @@
     "ibiza_professionals_positius": 3,
     "ibiza_professionals_en_vig": 12,
     "ibiza_uvac": 24,
-    "proves_laboratori": 23506
+    "proves_laboratori": 23506,
+    "pcr": 21923,
+    "anticossos": 1583
   },
   {
     "percentatge_increment": 4.8,
@@ -1204,7 +1208,9 @@
     "ibiza_professionals_positius": 3,
     "ibiza_professionals_en_vig": 14,
     "ibiza_uvac": 25,
-    "proves_laboratori": 24333
+    "proves_laboratori": 24333,
+    "pcr": 21923,
+    "anticossos": 1583
   },
   {
     "percentatge_increment": 1.4,
@@ -1233,7 +1239,9 @@
     "ibiza_professionals_en_vig": 14,
     "ibiza_uvac": 25,
     "ibiza_uci": 11,
-    "proves_laboratori": 25089
+    "proves_laboratori": 25089,
+    "pcr": 23240,
+    "anticossos": 1849
   },
   {
     "percentatge_increment": 0.8,
@@ -1262,7 +1270,9 @@
     "ibiza_professionals_positius": 1,
     "ibiza_professionals_en_vig": 18,
     "ibiza_uvac": 25,
-    "proves_laboratori": 25953
+    "proves_laboratori": 25953,
+    "pcr": 23930,
+    "anticossos": 2023
   },
   {
     "percentatge_increment": 1.1,
@@ -1291,7 +1301,9 @@
     "ibiza_professionals_positius": 1,
     "ibiza_professionals_en_vig": 18,
     "ibiza_uvac": 22,
-    "proves_laboratori": 26844
+    "proves_laboratori": 26844,
+    "pcr": 24645,
+    "anticossos": 2199
   },
   {
     "percentatge_increment": 1.5,
@@ -1320,7 +1332,9 @@
     "ibiza_professionals_positius": 1,
     "ibiza_professionals_en_vig": 15,
     "ibiza_uvac": 22,
-    "proves_laboratori": 28224
+    "proves_laboratori": 28224,
+    "pcr": 25862,
+    "anticossos": 2362
   },
   {
     "percentatge_increment": 1.3,
@@ -1349,7 +1363,9 @@
     "ibiza_professionals_positius": 0,
     "ibiza_professionals_en_vig": 13,
     "ibiza_uvac": 21,
-    "proves_laboratori": 29193
+    "proves_laboratori": 29193,
+    "pcr": 26642,
+    "anticossos": 2551
   },
   {
     "percentatge_increment": 0.9,
@@ -1378,7 +1394,9 @@
     "ibiza_professionals_positius": 0,
     "ibiza_professionals_en_vig": 23,
     "ibiza_uvac": 20,
-    "proves_laboratori": 30583
+    "proves_laboratori": 30583,
+    "pcr": 27745,
+    "anticossos": 2838
   },
   {
     "percentatge_increment": 1.54,
@@ -1386,8 +1404,8 @@
     "nous_positius": 29,
     "positius_acumulats": 1907,
     "curats": 1102,
-    "exitus": 172,
-    "positius_actius": 633,
+    "exitus": 174,
+    "positius_actius": 631,
     "hospitalitzats": 376,
     "uci": 70,
     "uvac_actius": 461,
@@ -1407,7 +1425,9 @@
     "ibiza_professionals_positius": 0,
     "ibiza_professionals_en_vig": 23,
     "ibiza_uvac": 13,
-    "proves_laboratori": 32533
+    "proves_laboratori": 32533,
+    "pcr": 29403,
+    "anticossos": 3130
   },
   {
     "percentatge_increment": 0.52,
@@ -1439,5 +1459,36 @@
     "proves_laboratori": 33547,
     "pcr": 30272,
     "anticossos": 3275
+  },
+  {
+    "percentatge_increment": 0.26,
+    "data": "2020-04-26T00:00:00.000Z",
+    "nous_positius": 5,
+    "positius_acumulats": 1922,
+    "curats": 1136,
+    "exitus": 179,
+    "positius_actius": 607,
+    "hospitalitzats": 365,
+    "uci": 65,
+    "uvac_actius": 439,
+    "professionals_positius": 114,
+    "mallorca_hospitalizats": 324,
+    "mallorca_uci": 53,
+    "mallorca_professionals_positius": 107,
+    "mallorca_professionals_en_vig": 194,
+    "mallorca_uvac": 423,
+    "menorca_hospitalizats": 8,
+    "menorca_uci": 5,
+    "menorca_professionals_positius": 1,
+    "menorca_professionals_en_vig": 11,
+    "menorca_uvac": 4,
+    "ibiza_hospitalizats": 33,
+    "ibiza_uci": 7,
+    "ibiza_professionals_positius": 0,
+    "ibiza_professionals_en_vig": 23,
+    "ibiza_uvac": 12,
+    "proves_laboratori": 34859,
+    "pcr": 31437,
+    "anticossos": 3422
   }
 ]
