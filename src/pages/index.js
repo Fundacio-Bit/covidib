@@ -6,7 +6,6 @@ import "moment/locale/ca";
 import "moment/locale/es";
 import last from "lodash/last";
 import "../util/i18n";
-import calculateMovingAverageSeries from "../util/movingAverage";
 import { useTranslation } from "react-i18next";
 
 import TooltipMap from "../charts/map/TooltipMap";
@@ -16,6 +15,7 @@ import StackedCases from "../charts/StackedCases";
 
 import StatChart from "../components/StatChart";
 import StatChartComparison from "../components/StatChartComparison";
+import DeathRateChart from "../components/DeathRateChart";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Overview from "../components/Overview";
@@ -62,9 +62,6 @@ const Index = () => {
 
   let nodes = data.allDataJson.nodes.sort((a, b) => a.timestamp - b.timestamp);
   const currentNode = last(nodes);
-
-  // moving average series
-  let movingAverageSeries = calculateMovingAverageSeries(nodes, 7);
 
   const { t } = useTranslation();
   
@@ -152,14 +149,7 @@ const Index = () => {
             />
           </Grid>
           <Grid columns={[1, 2]} gap={4} py={3} width={300}>
-            <StatChart
-              title={t("morts_per_dia_title")}
-              // subtitle={t("mitjana_mobil_subtitle")}
-              data={movingAverageSeries}
-              yKey="moving_avg"
-              xKey="data"
-              color={Colors.primary}
-            />
+            <DeathRateChart />
           </Grid>
         </Container>
       </main>
