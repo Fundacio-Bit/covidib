@@ -45,7 +45,7 @@ const resources = {
       uvac_actius: "Activos UVAC",
       act_dades: "Último registro",
       morts_per_dia_title:"Fallecidos-día por millón de habitantes",
-      mitjana_mobil_subtitle:"Media móvil de 7 días",
+      mitjana_mobil:"Media móvil de 7 días (desde el primer día con tres o más fallecidos acumulados)",
     },
   },
   ca: {
@@ -85,7 +85,7 @@ const resources = {
       uvac_actius: "Actius UVAC",
       act_dades: "Darrer registre",
       morts_per_dia_title:"Morts-día per milió d'habitants",
-      mitjana_mobil_subtitle:"Mitjana mòbil de 7 dies",
+      mitjana_mobil:"Mitjana mòbil de 7 dies (des del primer dia amb 3 exitus o més acumulats)",
     },
   },
 };
